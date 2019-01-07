@@ -1,0 +1,12 @@
+C:\CaoHuikonghey2018\SVN.TE.NetCore\MyRepository\TE.Services\obj\Debug\netcoreapp2.0\TE.Services.csprojAssemblyReference.cache
+C:\CaoHuikonghey2018\SVN.TE.NetCore\MyRepository\TE.Services\obj\Debug\netcoreapp2.0\TE.Services.csproj.CoreCompileInputs.cache
+C:\CaoHuikonghey2018\SVN.TE.NetCore\MyRepository\TE.Services\obj\Debug\netcoreapp2.0\TE.Services.AssemblyInfoInputs.cache
+C:\CaoHuikonghey2018\SVN.TE.NetCore\MyRepository\TE.Services\obj\Debug\netcoreapp2.0\TE.Services.AssemblyInfo.cs
+C:\CaoHuikonghey2018\SVN.TE.NetCore\MyRepository\TE.Services\bin\Debug\netcoreapp2.0\TE.Services.deps.json
+C:\CaoHuikonghey2018\SVN.TE.NetCore\MyRepository\TE.Services\bin\Debug\netcoreapp2.0\TE.Services.dll
+C:\CaoHuikonghey2018\SVN.TE.NetCore\MyRepository\TE.Services\bin\Debug\netcoreapp2.0\TE.Services.pdb
+C:\CaoHuikonghey2018\SVN.TE.NetCore\MyRepository\TE.Services\bin\Debug\netcoreapp2.0\TE.ViewModels.dll
+C:\CaoHuikonghey2018\SVN.TE.NetCore\MyRepository\TE.Services\bin\Debug\netcoreapp2.0\TE.ViewModels.pdb
+C:\CaoHuikonghey2018\SVN.TE.NetCore\MyRepository\TE.Services\obj\Debug\netcoreapp2.0\TE.Services.csproj.CopyComplete
+C:\CaoHuikonghey2018\SVN.TE.NetCore\MyRepository\TE.Services\obj\Debug\netcoreapp2.0\TE.Services.dll
+C:\CaoHuikonghey2018\SVN.TE.NetCore\MyRepository\TE.Services\obj\Debug\netcoreapp2.0\TE.Services.pdb

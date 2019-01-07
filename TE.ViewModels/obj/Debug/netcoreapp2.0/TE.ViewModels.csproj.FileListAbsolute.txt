@@ -1,0 +1,9 @@
+C:\CaoHuikonghey2018\SVN.TE.NetCore\MyRepository\TE.ViewModels\bin\Debug\netcoreapp2.0\TE.ViewModels.deps.json
+C:\CaoHuikonghey2018\SVN.TE.NetCore\MyRepository\TE.ViewModels\bin\Debug\netcoreapp2.0\TE.ViewModels.dll
+C:\CaoHuikonghey2018\SVN.TE.NetCore\MyRepository\TE.ViewModels\bin\Debug\netcoreapp2.0\TE.ViewModels.pdb
+C:\CaoHuikonghey2018\SVN.TE.NetCore\MyRepository\TE.ViewModels\obj\Debug\netcoreapp2.0\TE.ViewModels.csprojAssemblyReference.cache
+C:\CaoHuikonghey2018\SVN.TE.NetCore\MyRepository\TE.ViewModels\obj\Debug\netcoreapp2.0\TE.ViewModels.csproj.CoreCompileInputs.cache
+C:\CaoHuikonghey2018\SVN.TE.NetCore\MyRepository\TE.ViewModels\obj\Debug\netcoreapp2.0\TE.ViewModels.AssemblyInfoInputs.cache
+C:\CaoHuikonghey2018\SVN.TE.NetCore\MyRepository\TE.ViewModels\obj\Debug\netcoreapp2.0\TE.ViewModels.AssemblyInfo.cs
+C:\CaoHuikonghey2018\SVN.TE.NetCore\MyRepository\TE.ViewModels\obj\Debug\netcoreapp2.0\TE.ViewModels.dll
+C:\CaoHuikonghey2018\SVN.TE.NetCore\MyRepository\TE.ViewModels\obj\Debug\netcoreapp2.0\TE.ViewModels.pdb

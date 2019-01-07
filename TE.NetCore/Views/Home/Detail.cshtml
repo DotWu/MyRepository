@@ -1,0 +1,20 @@
+﻿@using TE.NetCore.Models
+@model Sys_User
+@{
+    ViewData["Title"] = $"Detail {Model.UserName}";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h1>用户详情</h1>
+<p><a href="/">返回首页</a></p>
+<table>
+    <tr>
+        <td>员工编号</td>
+        <td>@Model.Id</td>
+    </tr>
+    <tr>
+        <td>员工姓名</td>
+        <td>@Model.UserName</td>
+    </tr>
+</table>
+<p><a href="/">返回首页</a></p>
+

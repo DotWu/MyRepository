@@ -1,0 +1,7 @@
+﻿   body {font-family:'Microsoft YaHei UI'; margin: 10px auto;text-align: center}
+    a{color:#4280ee;text-decoration:none;}
+    table {margin: 0 auto;width: 90%}
+    table, th, td {border: 1px solid #eee;border-collapse: collapse;border-spacing: 0;padding: 5px;text-align: center}
+    .txt-left {text-align: left;}
+    .m-bottom-20{margin-bottom:20px;}
+    .m-top-10{margin-top:10px;}

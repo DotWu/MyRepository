@@ -1,0 +1,23 @@
+﻿@using TE.NetCore.Models
+@model Sys_User
+@{
+    ViewData["Title"] = $"编辑{Model.UserName}";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    .lab-input{margin:10px auto;}
+    .lab-input input{margin:0 5px;padding:3px;}
+</style>
+<h1>Edit @Model.UserName</h1>
+
+<form asp-action="Edit" method="post">
+    <div class="lab-input">
+        <label asp-for="UserName">员工姓名</label>
+        <input asp-for="UserName" />
+        <span asp-validation-for="UserName"></span>
+    </div>
+    <div class="m-top-10">
+        <input type="submit" value="保存" />
+    </div>
+</form>
+

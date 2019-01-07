@@ -1,0 +1,126 @@
+﻿body {
+    font-family:"Microsoft YaHei UI";
+}
+ul, li {
+    list-style: none;
+}
+ul{
+    padding:0px;
+    margin:0px;
+}
+.menu{
+    display:block;
+    margin-bottom:20px;
+}
+.menu .main {
+    background-color: blue;
+    width: 200px;
+    margin: 0px 20%;
+}
+.menu li {
+    background-color: #e6e6e6;
+}
+a {
+    text-decoration: none;
+    padding-left: 20px;
+    display: block;
+    width: 180px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-bottom: 1px solid #e8e8e8;
+}
+.menu .main a, .menu .hmain a {
+    color: #ff7921;
+    background: url(../images/tab-close.png) no-repeat 3px center;
+    font-size: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #e6e6e6;
+}
+.menu .main li a, .menu .hmain li a {
+    color: #353535;
+    background-image: none;
+    font-size: 12px;
+}
+    .menu .main li a:hover, .menu .hmain li a:hover {
+        background-color: red;
+    }
+.menu .main ul, .menu .hmain ul {
+    display: none;
+}
+.menu .hmain {
+    float: left;
+    background-color: blue;
+    margin-right: 1px;
+}
+.menu .hul {
+    margin: 0px 20%;
+    height:37px;
+}
+
+.tab li{
+    float:left;
+    background-color:#ff7921;
+    color:white;
+    padding:5px;
+    padding-right:2px;
+    border:1px solid #ffffff;
+    cursor:pointer;
+}
+.tab {
+    clear: both;
+    margin:10px 20%;
+}
+    .tab .tabin {
+        background-color: #eeeeee;
+        border: 1px solid #eeeeee;
+        color: #ff7921;
+    }
+    .tab .content {
+        clear: both;
+        background-color: #eeeeee;
+        color: #353535;
+        width: 300px;
+        height: 100px;
+        padding: 10px;
+        display: none;
+        text-align: left;
+    }
+    .tab .contentShow {
+        display: block;
+        background-color: #eeeeee;
+    }
+.tabs {
+    clear: both;
+    margin: 10px 20%;
+}
+ #tabsecond li{
+     float:left;
+     background-color:#ffffff;
+     color:blue;
+     padding:10px;
+     margin-right:2px;
+     cursor:pointer;
+ }
+ #tabsecond li.tabin{
+     background-color:#f2f6f8;
+     border:1px solid #000000;
+     border-bottom:0;
+     z-index:100;
+     position:relative;
+ }
+.tabs .content {
+    width: 500px;
+    height: 200px;
+    padding: 10px;
+    background-color: #f2f6f8;
+    clear: left;
+    border:1px solid #000000;
+    display:none;
+    top:-1px;
+    text-align:left;
+    position:relative;
+}
+.tabs .contentShow{
+    display:block;
+}

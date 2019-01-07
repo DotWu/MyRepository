@@ -1,0 +1,97 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "I am going to learn Web!";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<script src="~/js/JQueryWeb.js"></script>
+<link type="text/css" rel="stylesheet" href="~/css/JQueryWeb.css" />
+<div class="menu">
+    <ul>
+        <li class="main">
+            <a href="#">JQuery</a>
+            <ul>
+                <li><a asp-controller="About" asp-action="JQueryUI">JQuery UI</a></li>
+                <li><a href="#">子菜单2</a></li>
+            </ul>
+        </li>
+        <li class="main">
+            <a href="#">菜单2</a>
+            <ul>
+                <li><a href="#">子菜单1</a></li>
+                <li><a href="#">子菜单2</a></li>
+            </ul>
+        </li>
+        <li class="main">
+            <a href="#">菜单3</a>
+            <ul>
+                <li><a href="#">子菜单1</a></li>
+                <li><a href="#">子菜单2</a></li>
+            </ul>
+        </li>
+    </ul>
+    <br />
+    <br />
+    <ul class="hul">
+        <li class="hmain">
+            <a href="#">菜单1</a>
+            <ul>
+                <li><a href="#">子菜单1</a></li>
+                <li><a href="#">子菜单2</a></li>
+                <li><a href="#">子菜单3</a></li>
+            </ul>
+        </li>
+        <li class="hmain">
+            <a href="#">菜单2</a>
+            <ul>
+                <li><a href="#">子菜单1</a></li>
+                <li><a href="#">子菜单2</a></li>
+            </ul>
+        </li>
+        <li class="hmain">
+            <a href="#">菜单3</a>
+            <ul>
+                <li><a href="#">子菜单1</a></li>
+                <li><a href="#">子菜单2</a></li>
+            </ul>
+        </li>
+    </ul>
+    <br />
+</div>
+<div class="tab">
+    <ul id="tabfirst">
+        <li class="tabin">标签1</li>
+        <li>标签2</li>
+        <li>标签3</li>
+    </ul>
+    <div class="content contentShow">
+        内容1
+    </div>
+    <div class="content">
+        内容2
+    </div>
+    <div class="content">
+        内容3
+    </div>
+</div>
+
+<div class="tabs">
+    <ul id="tabsecond">
+        <li class="tabin">完整页面</li>
+        <li>部分页面</li>
+        <li>网络数据</li>
+    </ul>
+    <div id="myTab" class="content contentShow">
+        内容1
+    </div>
+    <div class="content">
+        内容2
+    </div>
+    <div class="content">
+        内容3
+    </div>
+</div>
+
+

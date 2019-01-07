@@ -1,0 +1,33 @@
+﻿@using System.Security.Claims
+@using TE.NetCore.Controllers
+@*@model HomePageViewModel*@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link type="text/css" rel="stylesheet" href="~/css/StyleSheet.css" />
+    <script src="~/js/jquery-2.1.1.min.js"></script>
+</head>
+<body>
+    <div>
+        <h3>@DateTime.Now</h3>
+        @*@if (User.Identity.IsAuthenticated)
+        {
+            <div>@User.Identity.Name</div>
+            <form method="post" asp-controller="Account" asp-action="Logout">
+              <input type="submit" value="退出" />
+            </form>
+        }
+        else
+        {
+            <a asp-controller="Account" asp-action="Login">登录</a>
+            <a asp-controller="Account" asp-action="Signup">注册</a>
+         }*@
+    </div>
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>
