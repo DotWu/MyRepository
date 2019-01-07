@@ -15,7 +15,6 @@ ul{
 .menu .main {
     background-color: blue;
     width: 200px;
-    margin: 0px 20%;
 }
 .menu li {
     background-color: #e6e6e6;
@@ -28,6 +27,7 @@ a {
     padding-top: 3px;
     padding-bottom: 3px;
     border-bottom: 1px solid #e8e8e8;
+    text-align:center;
 }
 .menu .main a, .menu .hmain a {
     color: #ff7921;
@@ -54,7 +54,6 @@ a {
     margin-right: 1px;
 }
 .menu .hul {
-    margin: 0px 20%;
     height:37px;
 }
 
@@ -69,7 +68,6 @@ a {
 }
 .tab {
     clear: both;
-    margin:10px 20%;
 }
     .tab .tabin {
         background-color: #eeeeee;
@@ -92,7 +90,6 @@ a {
     }
 .tabs {
     clear: both;
-    margin: 10px 20%;
 }
  #tabsecond li{
      float:left;
