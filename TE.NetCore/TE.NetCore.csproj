@@ -17,7 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="wwwroot\新文件夹\MyTab.html" />
+    <None Include="wwwroot\HTML\MyTab.html" />
   </ItemGroup>
 
 </Project>

@@ -8,20 +8,22 @@
 
 <script src="~/js/JQueryWeb.js"></script>
 <link type="text/css" rel="stylesheet" href="~/css/JQueryWeb.css" />
-<div class="menu">
+<div class="menu m-bottom-20">
     <ul>
         <li class="main">
             <a href="#">JQuery</a>
             <ul>
                 <li><a asp-controller="About" asp-action="JQueryUI">JQuery UI</a></li>
-                <li><a href="#">子菜单2</a></li>
+                <li><a asp-controller="About" asp-action="Backbone">Backbone</a></li>
             </ul>
         </li>
         <li class="main">
-            <a href="#">菜单2</a>
+            <a href="#">前端框架</a>
             <ul>
-                <li><a href="#">子菜单1</a></li>
-                <li><a href="#">子菜单2</a></li>
+                <li><a asp-controller="WebFrame" asp-action="AngularJS">AngularJS</a></li>
+                <li><a asp-controller="WebFrame" asp-action="AngularJS">ReactJS</a></li>
+                <li><a asp-controller="WebFrame" asp-action="VueJS">VueJS</a></li>
+                <li><a asp-controller="WebFrame" asp-action="Bootstrap">Bootstrap</a></li>
             </ul>
         </li>
         <li class="main">
@@ -60,7 +62,7 @@
     </ul>
     <br />
 </div>
-<div class="tab">
+<div class="tab m-bottom-20">
     <ul id="tabfirst">
         <li class="tabin">标签1</li>
         <li>标签2</li>
@@ -77,7 +79,7 @@
     </div>
 </div>
 
-<div class="tabs">
+<div class="tabs m-bottom-20">
     <ul id="tabsecond">
         <li class="tabin">完整页面</li>
         <li>部分页面</li>

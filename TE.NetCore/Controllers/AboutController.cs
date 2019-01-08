@@ -22,5 +22,9 @@ namespace TE.NetCore.Controllers
         {
             return View();
         }
+        public ViewResult Backbone()
+        {
+            return View();
+        }
     }
 }

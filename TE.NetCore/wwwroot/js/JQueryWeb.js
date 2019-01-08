@@ -51,11 +51,11 @@ $(document).ready(function () {
             $("#tabsecond li.tabin").removeClass("tabin");
             $(this).addClass("tabin");
             if (index == 0) {
-                $("#myTab").load("../新文件夹/MyTab.html");
+                $("#myTab").load("../HTML/MyTab.html");
             } else if (index == 1) {
-                $("#myTab").load("../新文件夹/SomeTab.html");
+                $("#myTab").load("../HTML/SomeTab.html");
             } else if (index == 2) {
-                $("#myTab").load("../新文件夹/InterData.html");
+                $("#myTab").load("../HTML/InterData.html");
             }
         });
     });

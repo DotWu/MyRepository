@@ -70,8 +70,7 @@ namespace ConsoleApp1
             Console.WriteLine("------------------分割线------------------");
             #endregion
 
-
-            #region 
+            #region   输出
             CommonClass c1 = new CommonClass();
             c1.Show();
             Thread.Sleep(2000);
@@ -97,7 +96,7 @@ namespace ConsoleApp1
 
             #endregion
 
-            #region
+            #region     属性输出
             Person person1 = new Person()
             {
                 Id = "123",
@@ -166,9 +165,64 @@ namespace ConsoleApp1
             Console.WriteLine("设置后的属性值为：{0}", idProperty.GetValue(person1));
 
             #endregion
+
+
+            Console.WriteLine("------------------线程1------------------");
+            ThreadStart childref = new ThreadStart(CallToChildThread);
+            Console.WriteLine("In Main:Creating the Child thread");
+            Thread childThread = new Thread(childref);
+            childThread.Start();
+            Console.ReadKey();
+            Console.WriteLine("------------------线程2------------------");
+            childref = new ThreadStart(CallToChildThreads);
+            Console.WriteLine("In Main:Creating the Child thread");
+            childThread = new Thread(childref);
+            childThread.Start();
+            //暂停主线程一段时间
+            Thread.Sleep(3000);
+            //现在中止子线程
+            Console.WriteLine("In Main:Aborting the Child thread");
+            childThread.Abort();
+            Console.ReadKey();
             Console.ReadLine();
         }
+        #region  线程
+        public static void CallToChildThread()
+        {
+            Console.WriteLine("Child thread starts");
+            //线程暂停5000毫秒
+            int sleepfor = 5000;
+            Console.WriteLine("Child Thread Paused for {0} seconds", sleepfor / 1000);
+            Thread.Sleep(sleepfor);
+            Console.WriteLine("Child thread resumes");
+        }
+
+        public static void CallToChildThreads()
+        {
+            try
+            {
+                Console.WriteLine("Child thread starts");
+                //计数到10
+                for (int counter = 0; counter <= 10; counter++)
+                {
+                    Thread.Sleep(500);
+                    Console.WriteLine(counter);
+                }
+                Console.WriteLine("Child Thread Completed");
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("Thread Abort Exception");
+                throw;
+            }
+            finally
+            {
+                Console.WriteLine("Couldn't catch the Thread Exception");
+            }
+        }
+        #endregion
     }
+
 
 
     #region  实体类
