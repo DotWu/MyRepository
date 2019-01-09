@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TE.Services", "TE.Services\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{F3BBCB24-0F4A-4236-93AE-945CD6A0ABBD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebSeact", "WebSeact\WebSeact.csproj", "{40C5EBD4-9D62-4C59-86F2-F9D9DD064562}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebSeact", "WebSeact\WebSeact.csproj", "{40C5EBD4-9D62-4C59-86F2-F9D9DD064562}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
