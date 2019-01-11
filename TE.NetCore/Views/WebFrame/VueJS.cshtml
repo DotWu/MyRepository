@@ -3,6 +3,153 @@
     ViewData["Title"] = "VueJS";
     Layout = "~/Views/Shared/_WebFrame.cshtml";
 }
+<!-- 开发环境版本，包含了有帮助的命令行警告 -->
+<script src="https://cdn.staticfile.org/vue/2.2.2/vue.min.js"></script>
+<style type="text/css">
+    .m-bottom-20{margin-bottom:20px;border-bottom:1px solid #ff7921;padding:3px; width:80%;}
+</style>
 
 <h2>VueJS</h2>
+<div id="app16" class="m-bottom-20">
+    <p>页面载入时，input元素自动获取焦点：</p>
+    <input v-focus />
+</div>
+<div id="components-demo3" class="demo m-bottom-20">
+    <button-counter2></button-counter2>
+    <button-counter2></button-counter2>
+    <button-counter2></button-counter2>
+</div>
+<div id="app15" class="m-bottom-20">
+    <div id="counter-event-example">
+        <p>{{total}}</p>
+        <button-counter v-on:increment="incrementTotal"></button-counter>
+        <button-counter v-on:increment="incrementTotal"></button-counter>
+    </div>
+</div>
+<div id="app14" class="m-bottom-20">
+    <ol>
+        <todo-item v-for="item in sites" v-bind:todo="item"></todo-item>
+    </ol>
+</div>
+<div id="app13" class="m-bottom-20">
+    <div>
+        <input v-model="parentMsg" />
+        <br />
+        <child v-bind:message="parentMsg"></child>
+    </div>
+</div>
+<div id="app12" class="m-bottom-20">
+    <child message="hello!"></child>
+</div>
+<div id="app11" class="m-bottom-20">
+    <runoob></runoob>
+</div>
+<div id="app10" class="m-bottom-20">
+    @*<input v-model.lazy="msg" />
+    <input v-model.number="age" type="number" />
+    <input v-model.trim="msg" />*@
+    <select v-model="selected" name="fruit">
+        <option value="">选择一个网站</option>
+        <option value="www.konghey.com">Konghey</option>
+        <option value="www.google.com">Google</option>
+    </select>
+    <div id="output">选择的网站是：{{selected}}</div>
+</div>
+<div id="app9" class="m-bottom-20">
+    <input type="radio" id="runoob" value="Runoob" v-model="picked" />
+    <label for="runoob">Runoob</label>
+    <br />
+    <input type="radio" id="google" value="Google" v-model="picked" />
+    <label for="google">Google</label>
+    <br />
+    <span>选中值为：{{picked}}</span>
+</div>
+<div id="app8" class="m-bottom-20">
+    <p>单个复选框：<input type="checkbox" id="checkbox" v-model="checked" /><label for="checkbox">{{checked}}</label></p>
+    <p>多个复选框：</p>
+    <input type="checkbox" id="runoob" value="Runoob" v-model="checkedNames" />
+    <label for="runoob">Runoob</label>
+    <input type="checkbox" id="google" value="Google" v-model="checkedNames" />
+    <label for="google">Google</label>
+    <input type="checkbox" id="tianmao" value="Tianmao" v-model="checkedNames" />
+    <label for="tianmao">Tianmao</label>
+    <br />
+    <span>选择的值为：{{checkedNames}}</span>
+</div>
+
+<div id="app7" class="m-bottom-20">
+    <p>input 元素：</p>
+    <input v-model="message" placeholder="请输入..." />
+    <p>消息是：{{message}}</p>
+
+    <p>textarea 元素：</p>
+    <p style="white-space:pre">{{message2}}</p>
+    <textarea v-model="message2" placeholder="多行文本输入..."></textarea>
+</div>
+
+
+<div id="app0" class="m-bottom-20">
+    <!-- 阻止单击事件冒泡 -->
+    <a v-on:click.stop="doThis"></a>
+    <!-- 提交事件不再重载页面 -->
+    <form v-on:submit.prevent="onSubmit"></form>
+    <!-- 修饰符可以串联  -->
+    <a v-on:click.stop.prevent="doThat"></a>
+    <!-- 只有修饰符 -->
+    <form v-on:submit.prevent></form>
+    <!-- 添加事件侦听器时使用事件捕获模式 -->
+    <div v-on:click.capture="doThis">...</div>
+    <!-- 只当事件在该元素本身（而不是子元素）触发时触发回调 -->
+    <div v-on:click.self="doThat">...</div>
+
+    <!-- click 事件只能点击一次，2.1.4版本新增 -->
+    <a v-on:click.once="doThis"></a>
+    <!-- 只有在 keyCode 是 enter 时调用 vm.submit() -->
+    <input v-on:keyup.enter="submit">
+</div>
+<div id="app" class="m-bottom-20">
+    <p v-if="seen">现在你看到我了</p>
+    <template v-if="ok">
+        <h1>Vue</h1>
+        <p>学的不仅是技术，更是梦想</p>
+        <p>Hello Vue.js</p>
+    </template>
+</div>
+<div id="app1" class="m-bottom-20">
+    <div v-if="Math.random() > 0.5">
+        Sorry
+    </div>
+    <div v-else>
+        Not sorry
+    </div>
+</div>
+<div id="app2" class="m-bottom-20">
+    <div v-if="type==='A'">A</div>
+    <div v-else-if="type==='B'">B</div>
+    <div v-else-if="type==='C'">C</div>
+    <div v-else-if="type=='D'">D</div>
+    <div v-else-if="type==5">5</div>      //==比较时自动转换类型，===比较要求类型一直否则为false
+    <div v-else>Not A/B/C</div>
+</div>
+<div id="app3" class="m-bottom-20">
+    <ol>
+        <li v-for="site in sites">
+            {{site.name}}
+        </li>
+    </ol>
+</div>
+<div id="app4" class="m-bottom-20">
+    <button v-on:click="counter +=1">增加1</button>
+    <p>这个按钮被点击了{{counter}}次</p>
+</div>
+<div id="app5" class="m-bottom-20">
+    <button v-on:click="greet">Greet</button>
+</div>
+<div id="app6" class="m-bottom-20">
+    <button v-on:click="say('hi')">Say hi</button>
+    <button v-on:click="say('what')">Say what</button>
+</div>
+
+
+<script src="~/js/VueWeb.js"></script>
 
