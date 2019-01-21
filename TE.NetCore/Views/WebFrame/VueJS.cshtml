@@ -5,11 +5,88 @@
 }
 <!-- 开发环境版本，包含了有帮助的命令行警告 -->
 <script src="https://cdn.staticfile.org/vue/2.2.2/vue.min.js"></script>
+<script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.min.js"></script>
+<script src="https://cdn.staticfile.org/vue-resource/1.5.1/vue-resource.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/animate.css@3.5.1" rel="stylesheet" 
+      type="text/css">
 <style type="text/css">
     .m-bottom-20{margin-bottom:20px;border-bottom:1px solid #ff7921;padding:3px; width:80%;}
+    .fade-enter-active,.fade-leave-active{
+        transition:opacity 2s;
+    }
+    .fade-enter,.fade-leave-to{
+        opacity:0;
+    }
+    .slide-fade-enter-active{
+        transition:all .3s ease;
+    }
+    .slide-fade-leave-active{
+        transition:all .8s cubic-bezier(1.0,0.5,0.8,1.0);
+    }
+    .slide-fade-enter,.slide-fade-leave-to{
+        transform:translateX(10px);
+        opacity:0;
+    }
 </style>
 
 <h2>VueJS</h2>
+<div id="app21" class="m-bottom-20">
+    <p style="font-size:25px;">计数器：{{products.id}}</p>
+    <button @@click="products.id++" style="font-size:25px;">点我</button>
+</div>
+<div id="app20" class="m-bottom-20">
+    <p style="font-size:25px;">计数器：{{counter}}</p>
+    <button @@click="counter++" style="font-size:25px;">点我</button>
+</div>
+<div id="box2" class="m-bottom-20">
+    <input type="button" @@click="post()" value="点我异步获取数据（Post）" />
+</div>
+<div id="box1" class="m-bottom-20">
+
+</div>
+<div id="databinding3">
+    <button v-on:click="show=!show">点我</button>
+    <transition v-on:before-enter="beforeEnter" v-on:enter="enter" v-on:leave="leave" v-bind:css="false">
+        <p v-if="show">使用Velocity.js实现过渡</p>
+    </transition>
+</div>
+<div id="databinding2" class="m-bottom-20">
+    <button v-on:click="show=!show">点我</button>
+    <transition name="custom-classes-transition" enter-active-class="animated data" leave-active-class="animated bounceOutRight">
+        <p v-if="show">自定义过渡的类名</p>
+    </transition>
+</div>
+<div id="databinding1" class="m-bottom-20">
+    <button v-on:click="show=!show">点我</button>
+    <transition name="slide-fade">
+        <p v-if="show">hello</p>
+    </transition>
+</div>
+<div id="databinding">
+    <button v-on:click="show=!show">点我</button>
+    <transition name="fade">
+        <p v-show="show"  v-bind:style="styleobj">动画实例</p>
+    </transition>
+</div>
+<div id="app19">
+    <h1>Hello App!</h1>
+    <p>
+        <!---使用router-link 组件来导航-->
+        <!---通过传入‘to’属性指定链接-->
+        <!--- <router-link>默认会被渲染成一个‘<a>’标签-->
+        <router-link to="/foo">Go to Foo</router-link>
+        <router-link to="/bar">Go to Bar</router-link>
+    </p>
+    <!--路由出口-->
+    <!--路由匹配到的组件将渲染在这里-->
+    <router-view></router-view>
+</div>
+<div id="app18" class="m-bottom-20">
+    <div v-konghey="{color:'green',text:'恭喜发财！'}"></div>
+</div>
+<div id="app17" v-konghey:hello.a.b="message" class="m-bottom-20">
+</div>
 <div id="app16" class="m-bottom-20">
     <p>页面载入时，input元素自动获取焦点：</p>
     <input v-focus />

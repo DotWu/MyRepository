@@ -209,3 +209,169 @@ Vue.directive('focus', {
 new Vue({
     el:'#app16'
 })
+
+Vue.directive('konghey', {
+    bind: function (el, binding, vnode) {
+        var s = JSON.stringify
+        el.innerHTML = 'name:' + s(binding.name) + '<br>' +
+            'value:' + s(binding.value) + '<br>' +
+            'expression:' + s(binding.expression) + '<br>' +
+            'argument:' + s(binding.argument) + '<br>' +
+            'modifiers:' + s(binding.modifiers) + '<br>' +
+            'vnode keys:' + Object.keys(vnode).join(',')
+    }
+})
+new Vue({
+    el: '#app17',
+    data: {
+        message:'Vue.js'
+    }
+})
+Vue.directive('konghey', function (el, binding) {
+    //简写方式设置文本及背景颜色
+    el.innerHTML = binding.value.text
+    el.style.backgroundColor = binding.value.color
+})
+new Vue({
+    el:'#app18'
+})
+
+//0.如果使用模块化机制编程，导入Vue和VueRouter,要调用Vue.use(VueRouter)
+//1.定义（路由）组件。
+//可以从其他文件import进来
+const Foo = { template: '<div>foo</div>' }
+const Bar = { template: '<div>bar</div>' }
+//2.定义路由
+//每个路由应该映射一个组件。其中“component”可以是
+//通过Vue.extend() 创建的组件构造器，
+//或者，只是一个组件配置对象
+//我们晚点再讨论嵌套路由
+const routes = [
+    { path: '/foo', component: Foo },
+    { path: '/bar', component: Bar }
+]
+//3.创建router实例，然后传‘routes’配置
+//你还可以传别的配置参数
+const router = new VueRouter({
+    routes  // （缩写）相当于 routes: routes
+})
+// 4. 创建和挂载根实例。
+// 记得要通过 router 配置参数注入路由，
+// 从而让整个应用都有路由功能
+const app = new Vue({
+    router
+}).$mount('#app19')
+
+new Vue({
+    el: '#databinding',
+    data: {
+        show: true,
+        styleobj: {
+            fontSize: '30px',
+            color:'red'
+        }
+    },
+    methods: {
+    }
+})
+new Vue({
+    el: '#databinding1',
+    data: {
+        show: true
+    }
+})
+new Vue({
+    el: '#databinding2',
+    data: {
+        show: true
+    }
+})
+new Vue({
+    el: '#databinding3',
+    data: {
+        show: true
+    },
+    methods: {
+        beforeEnter: function (el) {
+            el.style.opacity = 0
+            el.style.transformOrigin='left'
+        },
+        enter: function (el, done) {
+            Velocity(el, { opacity: 1, fontSize: '1.4em' }, { duration: 300 })
+            Velocity(el, { fontSize: '1em' }, { complete: done })
+        },
+        leave: function (el, done) {
+            Velocity(el, { translateX: '15px', rotateZ: '50deg' }, { durantion: 600 })
+            Velocity(el, { rotateZ: '100deg' }, { loop: 2 })
+            Velocity(el, {
+                rotateZ: '45deg',
+                translateY: '30px',
+                translateX: '30px',
+                opacity: 0
+            }, { complete: done })
+        }
+    }
+})
+
+
+window.onload = function () {
+    var vm = new Vue({
+        el: '#box1',
+        data: {
+            msg: 'Hello World！',
+        },
+        methods: {
+            get: function () {
+                //发送get请求
+                this.$http.get('').then(function (res) {
+                    document.write(res.body);
+                }, function () {
+                    console.log('请求失败处理');
+                });
+            }
+        }
+    });
+    var vm1 = new Vue({
+        el: '#box2',
+        data: {
+            msg:'Hello World'
+        },
+        methods: {
+            post: function () {
+                //发送post请求
+                this.$http.post('/WebFrame/Bootstrap', { name: "Bootstrap.js", url: "https://www.konghey.com" }, { emulateJSON: true }).then(function (res) {
+                    document.write(res.body);
+                }, function (res) {
+                    console.log(res.status);
+                });
+            }
+        }
+    })
+}
+var vm2 = new Vue({
+    el: '#app20',
+    data: {
+        counter: 1
+    }
+});
+vm2.$watch('counter', function (nval, oval) {
+    //alert('计数器值的变化：' + oval + '变为' + nval + '!');
+});
+setTimeout(
+    function () {
+        vm2.counter += 20;
+    },10000);
+
+var myproduct = { "id": 1, name: "book", "price": "20.00" };
+var vm3 = new Vue({
+    el: '#app21',
+    data: {
+        counter: 1,
+        products: myproduct
+    }
+})
+vm.products.qty = '1';
+console.log(vm3);
+vm3.$watch('counter', function (nval, oval) {
+    alert('计数器值的变化：' + oval + '变为' + nval + '!');
+});
