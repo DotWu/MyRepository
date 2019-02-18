@@ -3,8 +3,966 @@
     ViewData["Title"] = "Bootstrap";
     Layout = "~/Views/Shared/_WebFrame.cshtml";
 }
+<style>
+    .container {
+        margin-bottom: 20px;
+    }
 
-<h2>Bootstrap</h2>
+    .container1 .starter {
+        padding: 10px;
+        text-align: center;
+    }
 
+    .container1 .row {
+        margin-bottom: 20px;
+    }
 
+    .row .row {
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
 
+    .container1 .row [class*="col-"] { /*通配*/
+        padding-top: 15px;
+        padding-bottom: 15px;
+        background-color: #eee;
+        background-color: rgba(86,61,124,.15);
+        border: 1px solid #ddd;
+        border: 1px solid rgba(86,61,124,.2);
+    }
+</style>
+
+@section header_script{
+
+}
+<div class="container">
+    <div class="starter">
+        <h2>Bootstrap starter template</h2>
+        <p class="lead">欢迎使用Bootstrap</p>
+    </div>
+</div>
+<div class="container">
+    <div class="page-header">
+        <h1>Tooltip</h1>
+        <small>Bootstrap test</small>
+    </div>
+    <p class="text-muted" style="margin-bottom:0">
+        Hello，欢迎您 <a href="#" data-toggle="tooltip" title="" data-original-title="Defaulet tooltip">喜发金融</a>
+    </p>
+    <p class="text-muted" style="margin-bottom:0">
+        Hello，欢迎您 <button type="button" data-toggle="tooltip" class="btn btn-default" data-placement="left" data-original-title="Defaulet left">喜发金融left</button>
+        <button type="button" data-toggle="tooltip" class="btn btn-default" data-placement="top" data-original-title="Defaulet top">喜发金融top</button>
+        <button type="button" data-toggle="tooltip" class="btn btn-default" data-placement="bottom" data-original-title="Defaulet bottom">喜发金融bottom</button>
+        <button type="button" data-toggle="tooltip" class="btn btn-default" data-placement="right" data-original-title="Defaulet right">喜发金融right</button>
+    </p>
+</div>
+<div class="container">
+    <h4>Tabs</h4>
+    <ul id="myTab" class="nav nav-tabs">
+        <li class="active"><a href="#home" data-toggle="tab">Home</a></li>
+        <li><a href="#myhome" data-toggle="tab">MyHome</a></li>
+        <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="myTabDrop1">
+                Home<span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="myTabDrop1">
+                <li><a href="#fat" tabindex="-1" data-toggle="tab">@@fat</a></li>
+                <li><a href="#mdo" tabindex="-1" data-toggle="tab">@@mdo</a></li>
+            </ul>
+        </li>
+        <li><a href="#Tooltip" data-toggle="tab">滚动监听</a></li>
+    </ul>
+    <div id="myTabContent" class="tab-content">
+        <div class="tab-pane fade active" id="home">
+            <p>www.konghey.com</p>
+        </div>
+        <div class="tab-pane fade" id="myhome">
+            <p>mywww.konghey.com</p>
+        </div>
+        <div class="tab-pane fade" id="fat">
+            <p>fat</p>
+        </div>
+        <div class="tab-pane fade" id="mdo">
+            <p>mdo</p>
+        </div>
+        <div class="tab-pane fade" data-spy="scroll" data-target=".navbar" data-offset="70" id="Tooltip">
+            <div class="container">
+                <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapse" data-toggle="collapse" data-target=".js-navbar-scrollspy"></button>
+                            <a href="#" class="navbar-brand">Project Name</a>
+                        </div>
+                        <div class="collapse navbar-collapse js-navbar-scrollspy">
+                            <ul class="nav navbar-nav">
+                                <li class=""><a href="#geek">@@Geek</a></li>
+                                <li class=""><a href="#xifa">@@xifa</a></li>
+                                <li class="">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li class="active"><a href="#one" tabindex="-1">one</a></li>
+                                        <li><a href="#two" tabindex="-1">two</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+                <h2 id="geek">@@Geek</h2>
+                <p>极客学院</p>
+                <h2 id="xifa">@@xifa</h2>
+                <p>极客学院</p>
+                <h2 id="one">@@one</h2>
+                <p>极客学院</p>
+                <h2 id="two">@@two</h2>
+                <p>极客学院</p>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+<div class="container">
+    <div class="alert alert-success" role="alert">
+        Hello大家好
+    </div>
+    <div class="alert alert-info" role="alert">
+        欢迎来到
+        <a href="http://www.konghey.com" class="alert-link">喜发金融</a>
+    </div>
+    <div class="alert alert-warning" role="alert">
+        <button type="button" class="close" data-dismiss="alert">
+            <span aria-disabled="true">&times;</span>
+        </button>
+        <strong>Close</strong>
+    </div>
+    <div class="alert alert-link" role="alert">
+        Hello大家好
+    </div>
+</div>
+<div class="container">
+    <div class="progress">
+        <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" style="width:20%">
+            <span class="sr-only">80%</span>
+        </div>
+    </div>
+    <div class="progress">
+        <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width:3%">
+            3%
+        </div>
+    </div>
+    <div class="progress">
+        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width:33%">
+            33%
+        </div>
+    </div>
+    <div class="progress">
+        <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width:55%">
+            55%
+        </div>
+    </div>
+    <div class="progress">
+        <div class="progress-bar progress-bar-warning progress-bar-striped active" style="width:22%">22%</div>
+        <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width:38%">
+            38%
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="list-group">
+        <a href="#" class="list-group-item">
+            <h4 class="list-group-item-heading">极客学院</h4>
+            <p class="list-group-item-text">这是一个学习的地方</p>
+        </a>
+    </div>
+    <div class="list-group">
+        <a class="list-group-item list-group-item-success" href="#">组列表喜发金融</a>
+        <a class="list-group-item list-group-item-danger" href="#">组列表喜发金融</a>
+        <a class="list-group-item list-group-item-info" href="#">组列表喜发金融</a>
+    </div>
+    <div class="list-group">
+        <a class="list-group-item" href="#">组列表喜发金融</a>
+        <a class="list-group-item active" href="#">组列表喜发金融</a>
+        <a class="list-group-item" href="#">组列表喜发金融</a>
+    </div>
+    <div class="list-group">
+        <a class="list-group-item" href="#">组列表喜发金融</a>
+        <a class="list-group-item active" href="#">组列表喜发金融</a>
+        <a class="list-group-item disabled" href="#">组列表喜发金融</a>
+    </div>
+    <ul class="list-group">
+        <li class="list-group-item"><a href="#">组列表喜发金融</a><span class="badge">10</span></li>
+        <li class="list-group-item"><a href="#">组列表喜发金融</a></li>
+        <li class="list-group-item"><a href="#">组列表喜发金融</a><span class="badge">8</span></li>
+    </ul>
+</div>
+<div class="container">
+    <nav>
+        <ul class="pagination">
+            <li class="disabled"><a href="#">&laquo;</a></li>
+            <li class="active"><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">&raquo;</a></li>
+        </ul>
+    </nav>
+    <nav>
+        <ul class="pagination pagination-sm">
+            <li class="disabled"><a href="#">&laquo;</a></li>
+            <li class="active"><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">&raquo;</a></li>
+        </ul>
+    </nav>
+    <nav>
+        <ul class="pagination pagination-lg">
+            <li class="disabled"><a href="#">&laquo;</a></li>
+            <li class="active"><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">&raquo;</a></li>
+        </ul>
+    </nav>
+    <nav>
+        <ul class="pager">
+            <li><a href="#">下一页</a></li>
+            <li><a href="#">下一页</a></li>
+        </ul>
+    </nav>
+    <nav>
+        <ul class="pager">
+            <li class="previous disabled"><a href="#">&larr;向前</a></li>
+            <li class="next"><a href="#">&rarr;向后</a></li>
+        </ul>
+    </nav>
+    <span class="label label-default">默认</span>
+    <span class="label label-primary">默认</span>
+    <span class="label label-success">默认</span>
+    <span class="label label-warning">默认</span>
+    <h3>这是一个主标题 <span class="label label-default">描述</span></h3>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-6 col-md-3">
+            <a href="#" class="thumbnail">
+                <img src="~/images/1.jpg" />
+            </a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-6 col-md-3">
+            <div class="thumbnail">
+                <img src="~/images/2.jpg" />
+                <div class="caption">
+                    <h3>这是一个美女</h3>
+                    <p>喜发金融专注珠宝产业链</p>
+                    <p>
+                        <a href="#" class="btn btn-primary" role="button">选我</a>
+                        <a href="#" class="btn btn-default" role="button">点我</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="page-header">
+        <h1>喜发金融 <small>欢迎您</small></h1>
+    </div>
+</div>
+<div class="container">
+    <div class="jumbotron">
+        <h1>Hello,world</h1>
+        <p>欢迎来到极客学院，希望您能在这里学到更多的知识，丰富自己，提升自己。</p>
+        <p><a class="btn btn-info btn-lg" href="#" role="button">Learn more</a></p>
+    </div>
+</div>
+<div class="container">
+    <a href="#">短信消息<span class="badge">30</span></a>
+    <button class="btn btn-success" type="button">Message <span class="badge">100</span></button>
+    <ul class="nav nav-pills" role="rablist">
+        <li role="presentation" class="active"><a href="#">Home<span class="badge">100</span></a></li>
+        <li role="presentation"><a href="#">Profile<span class="badge">50</span></a></li>
+        <li role="presentation"><a href="#">Message<span class="badge">50</span></a></li>
+    </ul>
+</div>
+<div class="container">
+    <div class="dropdown">
+        <button type="button" class="btn btn-primary" id=" dlabel" data-toggle="dropdown" aria-haspopup="true">
+            下拉菜单
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+        </ul>
+    </div>
+</div>
+<nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+    <ol class="breadcrumb">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Library</a></li>
+        <li><a href="#">Data</a></li>
+    </ol>
+</nav>
+
+<div class="container">
+    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target=".bs-example-modal-lg">
+        启动model框
+    </button>
+    <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myModalLable" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                这是一个大的模块框
+            </div>
+        </div>
+    </div>
+    <button type="button" class="btn btn-primary btn-dm" data-toggle="modal" data-target=".bs-example-modal-dm">
+        启动model框
+    </button>
+    <div class="modal fade bs-example-modal-dm" tabindex="-1" role="dialog" aria-labelledby="myModalLable" aria-hidden="true">
+        <div class="modal-dialog modal-dm">
+            <div class="modal-content">
+                这是一个小的模块框
+            </div>
+        </div>
+    </div>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@@mdo">
+        Open modal for @@mdo
+    </button>
+    <div class="modal fade" tabindex="-1" id="exampleModal" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title" id="exampleModalLable">New Message</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="recipient-name" class="control-label"></label>
+                            <input class="form-control" type="text" id="recipient-name" />
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="panel panel-default">
+        <div class="panel-body">
+            Hello Word!
+        </div>
+    </div>
+    <div class="panel panel-success">
+        <div class="panel-heading">
+            学校的网站
+        </div>
+        <div class="panel-body">
+            欢迎您来深圳，深圳欢迎您
+        </div>
+        <div class="panel-footer panel-danger">
+            www.konghey.com
+        </div>
+    </div>
+    <div class="panel panel-info">
+        <div class="panel-heading">
+            卜道师列表
+        </div>
+        <div class="panel-body">
+            <p>一下是卜道师道友</p>
+        </div>
+        <table class="table">
+            <thead>
+                <tr class="active">
+                    <th>表格标题</th>
+                    <th>表格标题</th>
+                    <th>表格标题</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="success">
+                    <td>表格单元格</td>
+                    <td>表格单元格</td>
+                    <td>表格单元格</td>
+                </tr>
+                <tr class="info">
+                    <td>表格单元格</td>
+                    <td>表格单元格</td>
+                    <td>表格单元格</td>
+                </tr>
+                <tr class="success">
+                    <td>表格单元格</td>
+                    <td>表格单元格</td>
+                    <td>表格单元格</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            Hello
+        </div>
+        <div class="panel-body">
+            World
+        </div>
+        <ul class="list-group">
+            <li class="list-group-item"><a href="#">Hello1</a></li>
+            <li class="list-group-item"><a href="#">Hello1</a></li>
+            <li class="list-group-item"><a href="#">Hello1</a></li>
+        </ul>
+    </div>
+</div>
+<div class="container">
+    <ul class="media-list">
+        <li class="media">
+            <a class="media-left" href="#">
+                <img src="~/images/last_return.png" alt="" />
+            </a>
+            <div class="media-body">
+                <h4 class="media-heading">欢迎返回首页</h4>
+                <p>欢迎返回首页欢迎返回首页欢迎返回首页欢迎返回首页欢迎返回首页欢迎返回首页欢迎返回首页</p>
+                <p>欢迎返回首页欢迎返回首页欢迎返回首页欢迎返回首页欢迎返回首页欢迎返回首页欢迎返回首页</p>
+                <p>欢迎返回首页欢迎返回首页欢迎返回首页欢迎返回首页欢迎返回首页欢迎返回首页欢迎返回首页</p>
+                <p>欢迎返回首页欢迎返回首页欢迎返回首页欢迎返回首页欢迎返回首页欢迎返回首页欢迎返回首页</p>
+                <ul class="media-list">
+                    <li class="media">
+                        <a class="media-left" href="#">
+                            <img src="~/images/last_return.png" alt="" />
+                        </a>
+                        <div class="media-body">
+                            <h4 class="media-heading">欢迎返回首页</h4>
+                            <p>欢迎返回首页欢迎返回首页欢迎返回首页欢迎返回首页欢迎返回首页欢迎返回首页欢迎返回首页</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <li class="media">
+            <a class="media-left" href="#">
+                <img src="~/images/last_return.png" alt="" />
+            </a>
+            <div class="media-body">
+                <h4 class="media-heading">欢迎返回首页</h4>
+                <p>欢迎返回首页欢迎返回首页欢迎返回首页欢迎返回首页欢迎返回首页欢迎返回首页欢迎返回首页</p>
+            </div>
+        </li>
+        <li class="media">
+            <a class="media-left" href="#">
+                <img src="~/images/last_return.png" alt="" />
+            </a>
+            <div class="media-body">
+                <h4 class="media-heading">欢迎返回首页</h4>
+                <p>欢迎返回首页欢迎返回首页欢迎返回首页欢迎返回首页欢迎返回首页欢迎返回首页欢迎返回首页</p>
+            </div>
+        </li>
+    </ul>
+</div>
+<div class="container">
+    <div class="media">
+        <a class="media-left" href="#">
+            <img src="~/images/last_return.png" alt="" />
+        </a>
+        <div class="media-body">
+            <h4 class="media-heading">欢迎返回首页</h4>
+            <p>欢迎返回首页欢迎返回首页欢迎返回首页欢迎返回首页欢迎返回首页欢迎返回首页欢迎返回首页</p>
+            <p>欢迎返回首页欢迎返回首页欢迎返回首页欢迎返回首页欢迎返回首页欢迎返回首页欢迎返回首页</p>
+            <p>欢迎返回首页欢迎返回首页欢迎返回首页欢迎返回首页欢迎返回首页欢迎返回首页欢迎返回首页</p>
+            <p>欢迎返回首页欢迎返回首页欢迎返回首页欢迎返回首页欢迎返回首页欢迎返回首页欢迎返回首页</p>
+            <p>欢迎返回首页欢迎返回首页欢迎返回首页欢迎返回首页欢迎返回首页欢迎返回首页欢迎返回首页</p>
+            <div class="media">
+                <a class="media-left  media-bottom" href="#">
+                    <img src="~/images/last_return.png" alt="" />
+                </a>
+                <div class="media-body">
+                    <h4 class="media-heading">欢迎返回首页</h4>
+                    <p>欢迎返回首页欢迎返回首页欢迎返回首页欢迎返回首页欢迎返回首页欢迎返回首页欢迎返回首页</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="media">
+        <a class="media-left  media-middle" href="#">
+            <img src="~/images/last_return.png" alt="" />
+        </a>
+        <div class="media-body">
+            <h4 class="media-heading">欢迎返回首页</h4>
+            <p>欢迎返回首页欢迎返回首页欢迎返回首页欢迎返回首页欢迎返回首页欢迎返回首页欢迎返回首页</p>
+        </div>
+    </div>
+    <div class="media">
+        <a class="media-left  media-bottom" href="#">
+            <img src="~/images/last_return.png" alt="" />
+        </a>
+        <div class="media-body">
+            <h4 class="media-heading">欢迎返回首页</h4>
+            <p>欢迎返回首页欢迎返回首页欢迎返回首页欢迎返回首页欢迎返回首页欢迎返回首页欢迎返回首页</p>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="embed-responsive embed-responsive-16by9">
+        @*<iframe class="embed-responsive-item" src="https://www.konghey.com"></iframe>*@
+    </div>
+    <div class="well well-sm">
+        Look,I'm in a well
+    </div>
+</div>
+<div class="container">
+    <div class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">喜发</a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav" id="mytab">
+                    <li class="active"><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                </ul>
+                <form class="navbar-form navbar-left" role="search">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="搜索" />
+                    </div>
+                    <button type="submit" class="btn btn-default">搜索</button>
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Link</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            点我
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Hello1</a></li>
+                            <li><a href="#">Hello2</a></li>
+                            <li><a href="#">Hello3</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="input-group input-group-lg">
+        <span class="input-group-addon">@@</span>
+        <input type="text" class="form-control" placeholder="UserName" />
+    </div>
+    <div class="input-group">
+        <input class="form-control" type="text" />
+        <span class="input-group-addon">.00</span>
+    </div>
+    <div class="input-group input-group-sm">
+        <span class="input-group-addon">$</span>
+        <input type="text" class="form-control" />
+        <span class="input-group-addon">.00</span>
+    </div>
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="input-group">
+                <span class="input-group-btn">
+                    @*<input type="checkbox" />*@
+                    <button class="btn btn-default">Go</button>
+                </span>
+                <input type="text" class="form-control" />
+
+                <div class="input-group-btn">
+                    <button class="btn btn-danger dropdown-toggle" data-toggle="dropdown">
+                        Action
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">Hello</a></li>
+                        <li><a href="#">Hello</a></li>
+                        <li><a href="#">Hello</a></li>
+                    </ul>
+                </div>
+                <input type="text" class="form-control" />
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <ul id="mytab" class="nav nav-pills nav-justified" role="tablist">
+        <li role="presentation" class="active"><a href="#">Home</a></li>
+        <li role="presentation"><a href="#">Hello</a></li>
+        <li role="presentation" class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                Word<span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu" role="menu">
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Hello1</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1">Hello2</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1">Hello3</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1">Hello4</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+
+<div class="container">
+    <div class="btn-group">
+        <button type="button" class="btn btn-default">1</button>
+        <button type="button" class="btn btn-default">2</button>
+        <div class="btn-group">
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                下拉菜单
+                <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu">
+                <li><a href="#">点我</a></li>
+                <li><a href="#">点他</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="btn-group btn-group-justified">
+        <div class="btn-group">
+            <button type="button" class="btn btn-default">Left</button>
+        </div>
+        <div class="btn-group">
+            <button type="button" class="btn btn-default">Middle</button>
+        </div>
+        <div class="btn-group">
+            <button type="button" class="btn btn-default">Right</button>
+        </div>
+        @*<div class="btn-group">
+                <button type="button" class="btn btn-default">Left</button>
+                <button type="button" class="btn btn-default">Middle</button>
+                <button type="button" class="btn btn-default">Right</button>
+            </div>*@
+    </div>
+</div>
+<div class="container">
+    <div class="btn-group btn-group-lg">
+        <button type="button" class="btn btn-default">Left</button>
+        <button type="button" class="btn btn-default">Middle</button>
+        <button type="button" class="btn btn-default">Right</button>
+    </div>
+    <div class="btn-group-vertical">
+        <button type="button" class="btn btn-default">Left</button>
+        <button type="button" class="btn btn-default">Middle</button>
+        <button type="button" class="btn btn-default">Right</button>
+    </div>
+    <div class="btn-group btn-group-sm">
+        <button type="button" class="btn btn-default">Left</button>
+        <button type="button" class="btn btn-default">Middle</button>
+        <button type="button" class="btn btn-default">Right</button>
+    </div>
+    <div class="btn-group btn-group-xs">
+        <button type="button" class="btn btn-default">Left</button>
+        <button type="button" class="btn btn-default">Middle</button>
+        <button type="button" class="btn btn-default">Right</button>
+    </div>
+</div>
+<div class="container">
+    <div class="btn-toolbar">
+        <div class="btn-group">
+            <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-align-left"></span></button>
+            <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-align-center"></span></button>
+            <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-align-right"></span></button>
+        </div>
+        <div class="btn-group">
+            <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-align-justify"></span></button>
+        </div>
+        <div class="btn-group">
+            <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-list"></span></button>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="btn-group dropdown">
+        <button type="button" class="btn btn-info btn-lg">分裂式下拉菜单</button>
+        <button type="button" class="btn btn-info dropdown-toggle btn-lg" data-toggle="dropdown">
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" role="menu">
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+        </ul>
+    </div>
+    <div class="btn-group">
+        <button type="button" class="btn btn-info btn-dm">分裂式下拉菜单</button>
+        <button type="button" class="btn btn-info dropdown-toggle btn-dm" data-toggle="dropdown">
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" role="menu">
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+        </ul>
+    </div>
+    <div class="btn-group">
+        <button type="button" class="btn btn-info btn-xs">分裂式下拉菜单</button>
+        <button type="button" class="btn btn-info dropdown-toggle btn-xs" data-toggle="dropdown">
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" role="menu">
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+        </ul>
+    </div>
+</div>
+<div class="container">
+    <div class="dropdown pull-right">
+        <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+            下拉菜单
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-right" role="menu" ari-labelledby="dropdownMenu1">
+            @*<li role="presentation" class="dropdown-header">大写一到四</li>*@
+            <li><a href="#" role="menuitem">一</a></li>
+            <li><a href="#" role="menuitem">二</a></li>
+            <li><a href="#" role="menuitem">三</a></li>
+            @*<li role="presentation" class="dropdown-header">小写1到4</li>*@
+            <li role="presentation" class="divider"></li>
+            <li><a href="#" role="menuitem">1</a></li>
+            <li class="disabled"><a href="#" role="menuitem">2</a></li>
+            <li><a href="#" role="menuitem">3</a></li>
+        </ul>
+    </div>
+</div>
+<div class="container">
+    <form role="form">
+        <div class="form-group has-waring has-feedback">
+            <label>用户名</label>
+            <input class="form-control" type="text" />
+            <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+        </div>
+        <div class="form-group has-success">
+            <label>用户名</label>
+            <input class="form-control" type="text" />
+        </div>
+        <div class="form-group has-error">
+            <label>用户名</label>
+            <input class="form-control" type="text" />
+        </div>
+
+        <fieldset disabled>
+            <input type="text" class="form-control" />
+            <textarea class="form-control" rows="5">Hello</textarea>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" value="" /> 吃橘子
+                </label>
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" value="" /> 吃苹果
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input name="optionsRadios" type="radio" checked />男
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input name="optionsRadios" type="radio" checked />女
+                </label>
+            </div>
+            <select class="form-control">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+            <p class="form-control-static">请按照我的格式输入：hello@163.com</p>
+            <input class="form-control" type="text" placeholder="hello" readonly />
+        </fieldset>
+    </form>
+    <form role="form" class="form-inline">
+        <div class="form-group">
+            <label class="sr-only">Email</label>
+            <input type="email" class="form-control" placeholder="email" />
+        </div>
+        <div class="form-group">
+            <label>密码</label>
+            <input type="password" class="form-control" placeholder="password" />
+        </div>
+        <div class="form-group">
+            <label class="sr-only">选择文件</label>
+            <input type="file" />
+            <p class="help-block">选择你需要的文件</p>
+        </div>
+    </form>
+    <form role="form" class="form-horizontal">
+        <div class="form-group">
+            <label class="col-sm-2 control-label">Email</label>
+            <div class="col-sm-4">
+                <input type="email" class="form-control" placeholder="email" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 control-label">Password</label>
+            <div class="col-sm-4"><input type="password" class="form-control" placeholder="password" /></div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-2 col-sm-offset-2">
+                <div class="checkbox">
+                    <label><input type="checkbox" />记住密码</label>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <a href="#" class="btn btn-link active" role="button">找回密码</a>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" class="btn btn-primary">登录</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+<div class="container">
+    <button type="button" class="btn btn-default">default</button>
+    <button type="button" class="btn btn-primary">primary</button>
+    <button type="button" class="btn btn-success">success</button>
+    <button type="button" class="btn btn-info">info</button>
+    <button type="button" class="btn btn-warning">warning</button>
+    <button type="button" class="btn btn-link">link</button>
+    <div class="div">
+        <button type="button" class="btn btn-info btn-lg">info</button>
+        <button type="button" class="btn btn-info">info</button>
+        <button type="button" class="btn btn-info btn-dm">info</button>
+        <button type="button" class="btn btn-info btn-xs">info</button>
+    </div>
+    <button type="button" class="btn btn-default btn-block" disabled="disabled">Default</button>
+    <a href="#" class="btn btn-default btn-lg active" role="button">Default</a>
+    <input class="btn btn-default" type="button" value="Input" />
+    <img src="~/images/last_return.png" alt="" class="img-circle " style="width:100px; height:100px; background-color:#ddd;" />
+    <img src="~/images/last_return.png" alt="" class="img-rounded " style=" background-color:#ddd;" />
+    <img src="~/images/last_return.png" alt="" class="img-thumbnail " />
+</div>
+<div class="container">
+    <div class="table-responsive">
+        <table class="table table-bordered table-hover">
+            <thead>
+                <tr class="active">
+                    <th>表格标题</th>
+                    <th>表格标题</th>
+                    <th>表格标题</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="success">
+                    <td>表格单元格表格单元格表格单元格表格单元格</td>
+                    <td>表格单元格表格单元格表格单元格表格单元格</td>
+                    <td>表格单元格表格单元格表格单元格表格单元格</td>
+                </tr>
+                <tr class="info">
+                    <td>表格单元格表格单元格表格单元格表格单元格</td>
+                    <td>表格单元格</td>
+                    <td>表格单元格</td>
+                </tr>
+                <tr class="warning">
+                    <td>表格单元格</td>
+                    <td>表格单元格</td>
+                    <td>表格单元格</td>
+                </tr>
+                <tr>
+                    <td>表格单元格</td>
+                    <td>表格单元格</td>
+                    <td>表格单元格</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<div class="container container1">
+    <div class="row">
+        <div class="col-md-1">col-md-1</div>
+        <div class="col-md-1">col-md-1</div>
+        <div class="col-md-1">col-md-1</div>
+        <div class="col-md-1">col-md-1</div>
+        <div class="col-md-1">col-md-1</div>
+        <div class="col-md-1">col-md-1</div>
+        <div class="col-md-1">col-md-1</div>
+        <div class="col-md-1">col-md-1</div>
+        <div class="col-md-1">col-md-1</div>
+        <div class="col-md-1">col-md-1</div>
+        <div class="col-md-1">col-md-1</div>
+        <div class="col-md-1">col-md-1</div>
+    </div>
+    <div class="row">
+        <div class="col-md-3">col-md-3</div>
+        <div class="col-md-3">col-md-3</div>
+        <div class="col-md-3">col-md-3</div>
+        <div class="col-md-3">col-md-3</div>
+    </div>
+    <div class="row">
+        <div class="col-md-3">col-md-3col-md-3col-md-3col-md-3col-md-3col-md-3col-md-3col-md-3</div>
+        <div class="col-md-3">col-md-3</div>
+        <div class="col-md-3">col-md-3</div>
+    </div>
+    <div class="row">
+        <div class="col-md-4 col-md-offset-4">col-md-4</div>
+    </div>
+    <div class="row">
+        <div class="col-sm-9">
+            one
+            <div class="row">
+                <div class="col-xs-8">first</div>
+                <div class="col-xs-4">two</div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3">col-md-9</div>
+        <div class="col-md-9">col-md-3</div>
+    </div>
+</div>
+<div class="container">
+    <!--Code-->
+    For example <code>&lt;section&gt;</code> as inline;<br /><br />
+    <p>我希望现在能键入<kbd>cmd</kbd>命令</p>
+    <pre>Sample text here...;</pre>
+    <var>x</var>=<var>y</var>+<var>z</var>
+    <p><samp>Hello world</samp></p>
+</div>
+
+@section footer_script{
+    <script src="~/js/jquery-2.1.1.min.js"></script>
+    <script src="~/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        $("#mytab a").click(function (e) {
+            e.preventDefault();
+            $(this).tab("show");
+        })
+        $("#exampleModal").on("show.bs.modal", function (event) {
+            var button = $(event.relatedTarget)
+            var recipient = button.data("whatever")
+            var modal = $(this)
+            modal.find(".modal-title").text("New Message to" + recipient);
+            modal.find(".modal-body input").val(recipient)
+        })
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
+
+}
