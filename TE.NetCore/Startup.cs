@@ -62,7 +62,7 @@ namespace TE.NetCore
             //services.AddEntityFrameworkSqlite().AddDbContext<HelpDBContext>(options => options.UseSqlite(Configuration["database:connection"]));
 
             services.AddDbContext<Models.HelpDBContext>(options => options.UseSqlServer("")); //在Startup类中配置数据库连接
-                                                                                                                                      //services.AddEntityFrameworkSqlite().AddDbContext<HelpDBContext>();  //在HelpDBContext类中配置数据库连接
+            //services.AddEntityFrameworkSqlite().AddDbContext<HelpDBContext>();  //在HelpDBContext类中配置数据库连接
 
             //services.AddIdentity<User, IdentityRole>().AddEntityFrameworkStores<HelpDBContext>();//配置Identity框架
 
