@@ -24,7 +24,7 @@ namespace TE.NetCore.Controllers
         {
             return View();
         }
-        public ViewResult Bootstrap()
+        public ViewResult Bootstrap(string name,string url)
         {
             return View();
         }

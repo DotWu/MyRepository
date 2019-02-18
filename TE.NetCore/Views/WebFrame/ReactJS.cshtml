@@ -5,65 +5,121 @@
 }
 
 <h2>ReactJS</h2>
+<div id="isGreet"></div>
+<div id="isLoggedInId"></div>
+<div id="Onclick"></div>
 <div id="example"></div>
 <div id="runoob"></div>
 <div id="assembly"></div>
+<div id="showDate"></div>
+<div id="stateProps"></div>
+<div id="pTypes"></div>
+<script src="~/js/ReactWeb.js"></script>
 <script type="text/babel">
-    ///复合组件
-    function Name(props){
-    return <h1>网站名称：{props.name}</h1>;
+    @*class LoginControl extends React.Component{
+    constructor(props){
+    super(props);
+    this.handleLoginClick=this.handleLoginClick.bind(this);
+    this.handleLogoutClick=this.handleLogoutClick.bind(this);
+    this.state={isLoggedIn:false};
     }
-    function Url(props){
-    return (
-    <h2>网站地址：{props.url}</h2>);
+
+    handleLoginClick(){
+    this.setState({isLoggedIn:true});
     }
-    function Nickname(props){
-    return (
-    <h3>网站小名：{props.nickname}</h3>);
+    handleLogoutClick(){
+    this.setState({isLoggedIn:false});
     }
-    function App(props){
+    render(){
+    const isLoggedIn=this.state.isLoggedIn;
+    let button =null;
+    if(isLoggedIn){
+    button=(<LogoutButton onClick={this.handleLogoutClick} />);
+    }else{
+    button=(<LoginButton onClick={this.handleLoginClick} />);}
     return (
     <div>
-        <Name name="喜发金融" />
-        <Url url="www.konghey.com" />
-        <Nickname nickname="喜发" />
+        <Greeting isLoggedIn={isLoggedIn} />
+        {button}
     </div>
     );
-    };
-    ReactDOM.render(
-    <App />,
-    document.getElementById("assembly")
-    );
-
-
-    function HelloMessage(props){
+    }
+    }
+    function LogoutButton(props){
     return (
-    <h1>Hello {props.name}!</h1>);  //换行需要加().
-    };
-
-    const element=
-    <HelloMessage name="Runoob" />;
+    <button onClick={props.onClick}>退出</button>);
+    function LoginButton(props){
+    return (
+    <button onClick={props.onClick}>登录</button>);
+    }
+    
     ReactDOM.render(
-    element,
-    document.getElementById("runoob")
-    );
+    <LoginControl />,document.getElementById("isLoggedInId"));*@
 
 
 
-    var myStyle={
-    fontSize:24,
-    color:'#FF0000'
-    };
-    ReactDOM.render(
-    <div>
-        <h1>{1+1}</h1>
-        {/*注释...*/}
-        <h1>{1==1?'true':'false'}</h1>
-        <h3 style={myStyle}>欢迎学习React</h3>
-        <p data-myattribute="somevalue">这是一个不错的javascript库</p>
-    </div>,
-    document.getElementById("example")
-    );
+
+    @*var title="2019";
+        var MyTitle=React.createClass({
+        propTypes:{
+        title:React.PropTypes.string.isRequired,
+        },
+        render:function(){
+        return (
+        <h1>{this.props.title}</h1>);
+        }
+        });
+
+        ReactDOM.render(
+        <MyTitle title={title} />,document.getElementById('pTypes'));*@
+
+    @*MyComponent.propTypes={  //验证器说明
+           //可以声明prop 为指定的JS基本数据类型，默认情况，这些数据是可选的
+           optionalArray:React.PropTypes.array,
+           optionalBool:React.PropTypes.bool,
+           optionalFunc:React.PropTypes.func,
+           optionalNumber:React.PropTypes.number,
+           optionalObject:React.PropTypes.object,
+           optionalString:React.PropTypes.string,
+
+           //可以被渲染的对象 numbers,strings,elements 或 array
+           optionalNode:React.PropTypes.node,
+           //React元素
+           optionalElement:React.PropTypes.element,
+           //用JS的instanceof操作符声明prop为类的实例。
+           optionalMessage:React.PropTypes.instanceOf(Message),
+           //用enum来限制prop只接受指定的值
+           optionalEnum:React.PropTypes.oneOf(['News','Phots']),
+           //可以是多个对象类型中的一个
+           optionalUnion:React.PropTypes.oneOfType([
+              React.PropTypes.string,
+              React.PropTypes.number,
+              React.PropTypes.instanceOf(Message)
+           ]),
+           //指定类型组成的数组
+           optionalArrayOf:React.PropTypes.ArrayOf(React.PropTypes.number),
+           //指定类型的属性构成的对象
+           optionalObjectOf:React.PropTypes.objectOf(Rect.PropTypes.number),
+
+           //特定shape参数的对象
+           optionalObjectWithShape:React.PropTypes.shape({
+               color:React.PropTypes.string,
+               fontSize:React.PropTypes.number
+           }),
+           //任意类型加上'isRequired'来使用prop不可空。
+           requiredFunc:React.PropTypes.func.isRequired,
+           //自定义验证器，如果验证失败需要返回一个Error对象。不要直接使用‘consol.warn’或抛异常，因为这样‘oneOfType’会失效。
+          customProp:funciton(props,propName,componentName){
+             if(!/matchme/.test(props[propName])){
+                 return new Error('Validation failed!');
+             }
+          }
+        }*@
+
+
+
+
+   
 
 
 
