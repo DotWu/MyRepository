@@ -1,0 +1,27 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Login</title>
+    @section css{
+        @Styles.Render("~/Content/css");
+        @Scripts.Render("~/bundles/modernizr")
+    }
+</head>
+<body class="min-with-0">
+    <div class="container">
+
+    </div>
+    @section footer_script{
+        @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/bootstrap")
+        @RenderSection("scripts", required: false)
+    }
+</body>
+</html>
