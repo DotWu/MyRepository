@@ -1,0 +1,11 @@
+C:\CaoHuikonghey2018\CaoHuikonghey2018\KonghP2P\TE.TestCore2\bin\Debug\netcoreapp2.0\TE.TestCore2.deps.json
+C:\CaoHuikonghey2018\CaoHuikonghey2018\KonghP2P\TE.TestCore2\bin\Debug\netcoreapp2.0\TE.TestCore2.runtimeconfig.json
+C:\CaoHuikonghey2018\CaoHuikonghey2018\KonghP2P\TE.TestCore2\bin\Debug\netcoreapp2.0\TE.TestCore2.runtimeconfig.dev.json
+C:\CaoHuikonghey2018\CaoHuikonghey2018\KonghP2P\TE.TestCore2\bin\Debug\netcoreapp2.0\TE.TestCore2.dll
+C:\CaoHuikonghey2018\CaoHuikonghey2018\KonghP2P\TE.TestCore2\bin\Debug\netcoreapp2.0\TE.TestCore2.pdb
+C:\CaoHuikonghey2018\CaoHuikonghey2018\KonghP2P\TE.TestCore2\obj\Debug\netcoreapp2.0\TE.TestCore2.csprojAssemblyReference.cache
+C:\CaoHuikonghey2018\CaoHuikonghey2018\KonghP2P\TE.TestCore2\obj\Debug\netcoreapp2.0\TE.TestCore2.csproj.CoreCompileInputs.cache
+C:\CaoHuikonghey2018\CaoHuikonghey2018\KonghP2P\TE.TestCore2\obj\Debug\netcoreapp2.0\TE.TestCore2.AssemblyInfoInputs.cache
+C:\CaoHuikonghey2018\CaoHuikonghey2018\KonghP2P\TE.TestCore2\obj\Debug\netcoreapp2.0\TE.TestCore2.AssemblyInfo.cs
+C:\CaoHuikonghey2018\CaoHuikonghey2018\KonghP2P\TE.TestCore2\obj\Debug\netcoreapp2.0\TE.TestCore2.dll
+C:\CaoHuikonghey2018\CaoHuikonghey2018\KonghP2P\TE.TestCore2\obj\Debug\netcoreapp2.0\TE.TestCore2.pdb

@@ -15,3 +15,4 @@ G:\CaohuiWu\MyRepository\MyRepository\TE.ViewModels\obj\Debug\netcoreapp2.0\TE.V
 G:\CaohuiWu\MyRepository\MyRepository\TE.ViewModels\obj\Debug\netcoreapp2.0\TE.ViewModels.AssemblyInfo.cs
 G:\CaohuiWu\MyRepository\MyRepository\TE.ViewModels\obj\Debug\netcoreapp2.0\TE.ViewModels.dll
 G:\CaohuiWu\MyRepository\MyRepository\TE.ViewModels\obj\Debug\netcoreapp2.0\TE.ViewModels.pdb
+G:\CaohuiWu\MyRepository\MyRepository\TE.ViewModels\obj\Debug\netcoreapp2.0\TE.ViewModels.csprojResolveAssemblyReference.cache

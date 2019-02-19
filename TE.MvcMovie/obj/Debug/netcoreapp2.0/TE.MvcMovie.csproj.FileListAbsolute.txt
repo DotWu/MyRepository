@@ -1,0 +1,11 @@
+C:\CaoHuikonghey2018\CaoHuikonghey2018\KonghP2P\TE.MvcMovie\bin\Debug\netcoreapp2.0\TE.MvcMovie.deps.json
+C:\CaoHuikonghey2018\CaoHuikonghey2018\KonghP2P\TE.MvcMovie\bin\Debug\netcoreapp2.0\TE.MvcMovie.runtimeconfig.json
+C:\CaoHuikonghey2018\CaoHuikonghey2018\KonghP2P\TE.MvcMovie\bin\Debug\netcoreapp2.0\TE.MvcMovie.runtimeconfig.dev.json
+C:\CaoHuikonghey2018\CaoHuikonghey2018\KonghP2P\TE.MvcMovie\bin\Debug\netcoreapp2.0\TE.MvcMovie.dll
+C:\CaoHuikonghey2018\CaoHuikonghey2018\KonghP2P\TE.MvcMovie\bin\Debug\netcoreapp2.0\TE.MvcMovie.pdb
+C:\CaoHuikonghey2018\CaoHuikonghey2018\KonghP2P\TE.MvcMovie\obj\Debug\netcoreapp2.0\TE.MvcMovie.csprojAssemblyReference.cache
+C:\CaoHuikonghey2018\CaoHuikonghey2018\KonghP2P\TE.MvcMovie\obj\Debug\netcoreapp2.0\TE.MvcMovie.csproj.CoreCompileInputs.cache
+C:\CaoHuikonghey2018\CaoHuikonghey2018\KonghP2P\TE.MvcMovie\obj\Debug\netcoreapp2.0\TE.MvcMovie.AssemblyInfoInputs.cache
+C:\CaoHuikonghey2018\CaoHuikonghey2018\KonghP2P\TE.MvcMovie\obj\Debug\netcoreapp2.0\TE.MvcMovie.AssemblyInfo.cs
+C:\CaoHuikonghey2018\CaoHuikonghey2018\KonghP2P\TE.MvcMovie\obj\Debug\netcoreapp2.0\TE.MvcMovie.dll
+C:\CaoHuikonghey2018\CaoHuikonghey2018\KonghP2P\TE.MvcMovie\obj\Debug\netcoreapp2.0\TE.MvcMovie.pdb
