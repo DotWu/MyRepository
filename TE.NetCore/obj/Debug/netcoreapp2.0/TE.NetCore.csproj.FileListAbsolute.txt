@@ -20,11 +20,6 @@ C:\CaoHuikonghey2018\SVN.TE.NetCore\MyRepository\TE.NetCore\obj\Debug\netcoreapp
 C:\CaoHuikonghey2018\SVN.TE.NetCore\MyRepository\TE.NetCore\obj\Debug\netcoreapp2.0\TE.NetCore.dll
 C:\CaoHuikonghey2018\SVN.TE.NetCore\MyRepository\TE.NetCore\obj\Debug\netcoreapp2.0\TE.NetCore.pdb
 C:\CaoHuikonghey2018\SVN.TE.NetCore\MyRepository\TE.NetCore\obj\Debug\netcoreapp2.0\TE.NetCore.csprojAssemblyReference.cache
-C:\CaoHuikonghey2018\SVN.TE.NetCore\MyRepository\TE.NetCore\bin\Debug\netcoreapp2.0\TE.Services.dll
-C:\CaoHuikonghey2018\SVN.TE.NetCore\MyRepository\TE.NetCore\bin\Debug\netcoreapp2.0\TE.ViewModels.dll
-C:\CaoHuikonghey2018\SVN.TE.NetCore\MyRepository\TE.NetCore\bin\Debug\netcoreapp2.0\TE.Services.pdb
-C:\CaoHuikonghey2018\SVN.TE.NetCore\MyRepository\TE.NetCore\bin\Debug\netcoreapp2.0\TE.ViewModels.pdb
-C:\CaoHuikonghey2018\SVN.TE.NetCore\MyRepository\TE.NetCore\obj\Debug\netcoreapp2.0\TE.NetCore.csproj.CopyComplete
 G:\CaohuiWu\MyRepository\MyRepository\TE.NetCore\bin\Debug\netcoreapp2.0\TE.NetCore.deps.json
 G:\CaohuiWu\MyRepository\MyRepository\TE.NetCore\bin\Debug\netcoreapp2.0\TE.NetCore.runtimeconfig.json
 G:\CaohuiWu\MyRepository\MyRepository\TE.NetCore\bin\Debug\netcoreapp2.0\TE.NetCore.runtimeconfig.dev.json

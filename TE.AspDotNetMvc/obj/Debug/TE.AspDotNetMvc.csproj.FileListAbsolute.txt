@@ -98,3 +98,5 @@ C:\CaoHuikonghey2018\SVN.TE.NetCore\MyRepository\TE.AspDotNetMvc\obj\Debug\TE.As
 C:\CaoHuikonghey2018\SVN.TE.NetCore\MyRepository\TE.AspDotNetMvc\obj\Debug\TE.AspDotNetMvc.csproj.CopyComplete
 C:\CaoHuikonghey2018\SVN.TE.NetCore\MyRepository\TE.AspDotNetMvc\obj\Debug\TE.AspDotNetMvc.dll
 C:\CaoHuikonghey2018\SVN.TE.NetCore\MyRepository\TE.AspDotNetMvc\obj\Debug\TE.AspDotNetMvc.pdb
+C:\CaoHuikonghey2018\SVN.TE.NetCore\MyRepository\TE.AspDotNetMvc\bin\TE.Models.dll
+C:\CaoHuikonghey2018\SVN.TE.NetCore\MyRepository\TE.AspDotNetMvc\bin\TE.Models.pdb

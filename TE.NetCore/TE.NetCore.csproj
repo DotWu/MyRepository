@@ -13,10 +13,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\TE.Services\TE.Services.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
     <None Include="wwwroot\HTML\MyTab.html" />
   </ItemGroup>
 

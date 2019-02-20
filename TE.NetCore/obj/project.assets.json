@@ -5092,29 +5092,6 @@
         "runtime": {
           "lib/netstandard1.3/Microsoft.WindowsAzure.Storage.dll": {}
         }
-      },
-      "TE.Services/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v2.0",
-        "dependencies": {
-          "TE.ViewModels": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/TE.Services.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/TE.Services.dll": {}
-        }
-      },
-      "TE.ViewModels/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v2.0",
-        "compile": {
-          "bin/placeholder/TE.ViewModels.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/TE.ViewModels.dll": {}
-        }
       }
     }
   },
@@ -13428,16 +13405,6 @@
         "windowsazure.storage.8.1.4.nupkg.sha512",
         "windowsazure.storage.nuspec"
       ]
-    },
-    "TE.Services/1.0.0": {
-      "type": "project",
-      "path": "../TE.Services/TE.Services.csproj",
-      "msbuildProject": "../TE.Services/TE.Services.csproj"
-    },
-    "TE.ViewModels/1.0.0": {
-      "type": "project",
-      "path": "../TE.ViewModels/TE.ViewModels.csproj",
-      "msbuildProject": "../TE.ViewModels/TE.ViewModels.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -13447,8 +13414,7 @@
       "Microsoft.EntityFrameworkCore.Sqlite >= 2.2.0",
       "Microsoft.EntityFrameworkCore.Tools >= 2.2.0",
       "Microsoft.NETCore.App >= 2.0.0",
-      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.0.3",
-      "TE.Services >= 1.0.0"
+      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.0.3"
     ]
   },
   "packageFolders": {
@@ -13480,11 +13446,7 @@
       },
       "frameworks": {
         "netcoreapp2.0": {
-          "projectReferences": {
-            "C:\\CaoHuikonghey2018\\SVN.TE.NetCore\\MyRepository\\TE.Services\\TE.Services.csproj": {
-              "projectPath": "C:\\CaoHuikonghey2018\\SVN.TE.NetCore\\MyRepository\\TE.Services\\TE.Services.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {

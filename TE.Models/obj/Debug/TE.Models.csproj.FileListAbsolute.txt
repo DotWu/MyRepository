@@ -1,0 +1,6 @@
+C:\CaoHuikonghey2018\SVN.TE.NetCore\MyRepository\TE.Models\bin\Debug\TE.Models.dll
+C:\CaoHuikonghey2018\SVN.TE.NetCore\MyRepository\TE.Models\bin\Debug\TE.Models.pdb
+C:\CaoHuikonghey2018\SVN.TE.NetCore\MyRepository\TE.Models\obj\Debug\TE.Models.csprojAssemblyReference.cache
+C:\CaoHuikonghey2018\SVN.TE.NetCore\MyRepository\TE.Models\obj\Debug\TE.Models.csproj.CoreCompileInputs.cache
+C:\CaoHuikonghey2018\SVN.TE.NetCore\MyRepository\TE.Models\obj\Debug\TE.Models.dll
+C:\CaoHuikonghey2018\SVN.TE.NetCore\MyRepository\TE.Models\obj\Debug\TE.Models.pdb
