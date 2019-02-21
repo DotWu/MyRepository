@@ -1,0 +1,11 @@
+C:\CaoHuikonghey2018\SVN.TE.NetCore\MyRepository\TE.Services\obj\Debug\TE.Services.csprojAssemblyReference.cache
+C:\CaoHuikonghey2018\SVN.TE.NetCore\MyRepository\TE.Services\obj\Debug\TE.Services.csproj.CoreCompileInputs.cache
+C:\CaoHuikonghey2018\SVN.TE.NetCore\MyRepository\TE.Services\bin\Debug\TE.Services.dll
+C:\CaoHuikonghey2018\SVN.TE.NetCore\MyRepository\TE.Services\bin\Debug\TE.Services.pdb
+C:\CaoHuikonghey2018\SVN.TE.NetCore\MyRepository\TE.Services\bin\Debug\TE.Data.dll
+C:\CaoHuikonghey2018\SVN.TE.NetCore\MyRepository\TE.Services\bin\Debug\TE.Models.dll
+C:\CaoHuikonghey2018\SVN.TE.NetCore\MyRepository\TE.Services\bin\Debug\TE.Data.pdb
+C:\CaoHuikonghey2018\SVN.TE.NetCore\MyRepository\TE.Services\bin\Debug\TE.Models.pdb
+C:\CaoHuikonghey2018\SVN.TE.NetCore\MyRepository\TE.Services\obj\Debug\TE.Services.csproj.CopyComplete
+C:\CaoHuikonghey2018\SVN.TE.NetCore\MyRepository\TE.Services\obj\Debug\TE.Services.dll
+C:\CaoHuikonghey2018\SVN.TE.NetCore\MyRepository\TE.Services\obj\Debug\TE.Services.pdb

@@ -224,6 +224,10 @@
       <Project>{6ca0c8bf-eda7-4828-acef-32dc360f1821}</Project>
       <Name>TE.Models</Name>
     </ProjectReference>
+    <ProjectReference Include="..\TE.Services\TE.Services.csproj">
+      <Project>{0798e6cd-94d5-4661-aa97-47f97a615496}</Project>
+      <Name>TE.Services</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

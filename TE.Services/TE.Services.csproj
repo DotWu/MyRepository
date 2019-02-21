@@ -43,5 +43,15 @@
     <Compile Include="SysUserService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TE.Data\TE.Data.csproj">
+      <Project>{70384f9f-58a7-42dc-91d8-79385ade2c81}</Project>
+      <Name>TE.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TE.Models\TE.Models.csproj">
+      <Project>{6ca0c8bf-eda7-4828-acef-32dc360f1821}</Project>
+      <Name>TE.Models</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
