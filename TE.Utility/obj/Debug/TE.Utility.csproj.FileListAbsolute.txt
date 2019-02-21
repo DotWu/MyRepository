@@ -1,0 +1,8 @@
+C:\CaoHuikonghey2018\SVN.TE.NetCore\MyRepository\TE.Utility\bin\Debug\TE.Utility.dll
+C:\CaoHuikonghey2018\SVN.TE.NetCore\MyRepository\TE.Utility\bin\Debug\TE.Utility.pdb
+C:\CaoHuikonghey2018\SVN.TE.NetCore\MyRepository\TE.Utility\bin\Debug\Snowflake.Net.dll
+C:\CaoHuikonghey2018\SVN.TE.NetCore\MyRepository\TE.Utility\obj\Debug\TE.Utility.csprojAssemblyReference.cache
+C:\CaoHuikonghey2018\SVN.TE.NetCore\MyRepository\TE.Utility\obj\Debug\TE.Utility.csproj.CoreCompileInputs.cache
+C:\CaoHuikonghey2018\SVN.TE.NetCore\MyRepository\TE.Utility\obj\Debug\TE.Utility.csproj.CopyComplete
+C:\CaoHuikonghey2018\SVN.TE.NetCore\MyRepository\TE.Utility\obj\Debug\TE.Utility.dll
+C:\CaoHuikonghey2018\SVN.TE.NetCore\MyRepository\TE.Utility\obj\Debug\TE.Utility.pdb

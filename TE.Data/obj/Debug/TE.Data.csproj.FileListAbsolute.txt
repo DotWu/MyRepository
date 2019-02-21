@@ -4,3 +4,10 @@ C:\CaoHuikonghey2018\SVN.TE.NetCore\MyRepository\TE.Data\obj\Debug\TE.Data.cspro
 C:\CaoHuikonghey2018\SVN.TE.NetCore\MyRepository\TE.Data\obj\Debug\TE.Data.csproj.CoreCompileInputs.cache
 C:\CaoHuikonghey2018\SVN.TE.NetCore\MyRepository\TE.Data\obj\Debug\TE.Data.dll
 C:\CaoHuikonghey2018\SVN.TE.NetCore\MyRepository\TE.Data\obj\Debug\TE.Data.pdb
+C:\CaoHuikonghey2018\SVN.TE.NetCore\MyRepository\TE.Data\bin\Debug\TE.Data.dll.config
+C:\CaoHuikonghey2018\SVN.TE.NetCore\MyRepository\TE.Data\bin\Debug\EntityFramework.dll
+C:\CaoHuikonghey2018\SVN.TE.NetCore\MyRepository\TE.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\CaoHuikonghey2018\SVN.TE.NetCore\MyRepository\TE.Data\bin\Debug\EntityFramework.xml
+C:\CaoHuikonghey2018\SVN.TE.NetCore\MyRepository\TE.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\CaoHuikonghey2018\SVN.TE.NetCore\MyRepository\TE.Data\bin\Debug\zh-Hans\EntityFramework.resources.dll
+C:\CaoHuikonghey2018\SVN.TE.NetCore\MyRepository\TE.Data\obj\Debug\TE.Data.csproj.CopyComplete

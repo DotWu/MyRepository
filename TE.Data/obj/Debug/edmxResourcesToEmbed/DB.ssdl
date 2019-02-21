@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="kongheydbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Sys_ErrorLog">
+    <Key>
+      <PropertyRef Name="LogID" />
+    </Key>
+    <Property Name="LogID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ErrorURL" Type="nvarchar" MaxLength="650" />
+    <Property Name="LogContent" Type="text" />
+    <Property Name="AddOn" Type="datetime" Nullable="false" />
+    <Property Name="RowVersion" Type="timestamp" StoreGeneratedPattern="Computed" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Sys_Log">
+    <Key>
+      <PropertyRef Name="LogID" />
+    </Key>
+    <Property Name="LogID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserIP" Type="varchar" MaxLength="20" />
+    <Property Name="LogType" Type="int" Nullable="false" />
+    <Property Name="LogContent" Type="nvarchar" MaxLength="1000" />
+    <Property Name="AddOn" Type="datetime" Nullable="false" />
+    <Property Name="AddBy" Type="varchar" MaxLength="40" Nullable="false" />
+    <Property Name="AddByName" Type="nvarchar" MaxLength="20" />
+    <Property Name="RowVersion" Type="timestamp" StoreGeneratedPattern="Computed" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Sys_Permission">
+    <Key>
+      <PropertyRef Name="PermissionID" />
+    </Key>
+    <Property Name="PermissionID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ActionName" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="ControllerName" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="RequestType" Type="varchar" MaxLength="20" />
+    <Property Name="ButtonName" Type="nvarchar" MaxLength="20" />
+    <Property Name="ModuleType" Type="varchar" MaxLength="30" />
+    <Property Name="ModuleName" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="ModuleUrl" Type="varchar" MaxLength="100" />
+    <Property Name="FatherPermissionID" Type="int" Nullable="false" />
+    <Property Name="PermissionType" Type="int" Nullable="false" />
+    <Property Name="IsShow" Type="int" Nullable="false" />
+    <Property Name="ShowOrder" Type="int" Nullable="false" />
+    <Property Name="Remark" Type="nvarchar" MaxLength="50" />
+    <Property Name="RowVersion" Type="timestamp" StoreGeneratedPattern="Computed" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Sys_Role">
+    <Key>
+      <PropertyRef Name="RoleID" />
+    </Key>
+    <Property Name="RoleID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RoleName" Type="nvarchar" MaxLength="20" />
+    <Property Name="FatherRoleID" Type="int" />
+    <Property Name="IsSysRole" Type="int" Nullable="false" />
+    <Property Name="IsEnable" Type="int" Nullable="false" />
+    <Property Name="RoleType" Type="int" Nullable="false" />
+    <Property Name="ShowOrder" Type="int" />
+    <Property Name="Remark" Type="nvarchar" MaxLength="50" />
+    <Property Name="RowVersion" Type="timestamp" StoreGeneratedPattern="Computed" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Sys_Role_Permission">
+    <Key>
+      <PropertyRef Name="RMID" />
+    </Key>
+    <Property Name="RMID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RoleID" Type="int" Nullable="false" />
+    <Property Name="PermissionID" Type="int" Nullable="false" />
+    <Property Name="RowVersion" Type="timestamp" StoreGeneratedPattern="Computed" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Sys_User">
+    <Key>
+      <PropertyRef Name="UserID" />
+    </Key>
+    <Property Name="UserID" Type="varchar" MaxLength="40" Nullable="false" />
+    <Property Name="UserName" Type="nvarchar" MaxLength="20" />
+    <Property Name="PassWord" Type="varchar" MaxLength="40" Nullable="false" />
+    <Property Name="Sex" Type="int" Nullable="false" />
+    <Property Name="UserType" Type="int" Nullable="false" />
+    <Property Name="Department" Type="nvarchar" MaxLength="30" />
+    <Property Name="Duties" Type="nvarchar" MaxLength="30" />
+    <Property Name="Phone" Type="varchar" MaxLength="30" />
+    <Property Name="MobilePhone" Type="varchar" MaxLength="30" />
+    <Property Name="Email" Type="varchar" MaxLength="40" />
+    <Property Name="Birthday" Type="datetime" />
+    <Property Name="Address" Type="nvarchar" MaxLength="100" />
+    <Property Name="PostCode" Type="varchar" MaxLength="10" />
+    <Property Name="IsEnable" Type="int" Nullable="false" />
+    <Property Name="LastLoginData" Type="datetime" />
+    <Property Name="LoginTimes" Type="int" Nullable="false" />
+    <Property Name="AddOn" Type="datetime" Nullable="false" />
+    <Property Name="AddBy" Type="varchar" MaxLength="40" Nullable="false" />
+    <Property Name="RowVersion" Type="timestamp" StoreGeneratedPattern="Computed" Nullable="false" />
+    <Property Name="GlobalPageSize" Type="int" Nullable="false" />
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Sys_User_Permission">
+    <Key>
+      <PropertyRef Name="UMID" />
+    </Key>
+    <Property Name="UMID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserID" Type="varchar" MaxLength="40" Nullable="false" />
+    <Property Name="PermissionID" Type="int" Nullable="false" />
+    <Property Name="RowVersion" Type="timestamp" StoreGeneratedPattern="Computed" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Sys_User_Role">
+    <Key>
+      <PropertyRef Name="URID" />
+    </Key>
+    <Property Name="URID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserID" Type="varchar" MaxLength="40" Nullable="false" />
+    <Property Name="RoleID" Type="int" Nullable="false" />
+    <Property Name="RowVersion" Type="timestamp" StoreGeneratedPattern="Computed" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Sys_WebMenu">
+    <Key>
+      <PropertyRef Name="MenuID" />
+    </Key>
+    <Property Name="MenuID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MenuName" Type="nvarchar" MaxLength="15" />
+    <Property Name="MenuType" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="ShowOrder" Type="int" Nullable="false" />
+    <Property Name="TContent" Type="text" />
+    <Property Name="RowVersion" Type="timestamp" StoreGeneratedPattern="Computed" Nullable="false" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <Association Name="FK_Sys_Role_Permission_Sys_Permission">
+    <End Role="Sys_Permission" Type="Self.Sys_Permission" Multiplicity="1" />
+    <End Role="Sys_Role_Permission" Type="Self.Sys_Role_Permission" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sys_Permission">
+        <PropertyRef Name="PermissionID" />
+      </Principal>
+      <Dependent Role="Sys_Role_Permission">
+        <PropertyRef Name="PermissionID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Sys_Role_Permission_Sys_Role">
+    <End Role="Sys_Role" Type="Self.Sys_Role" Multiplicity="1" />
+    <End Role="Sys_Role_Permission" Type="Self.Sys_Role_Permission" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sys_Role">
+        <PropertyRef Name="RoleID" />
+      </Principal>
+      <Dependent Role="Sys_Role_Permission">
+        <PropertyRef Name="RoleID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Sys_User_Permission_Sys_Permission">
+    <End Role="Sys_Permission" Type="Self.Sys_Permission" Multiplicity="1" />
+    <End Role="Sys_User_Permission" Type="Self.Sys_User_Permission" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sys_Permission">
+        <PropertyRef Name="PermissionID" />
+      </Principal>
+      <Dependent Role="Sys_User_Permission">
+        <PropertyRef Name="PermissionID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Sys_User_Permission_Sys_User">
+    <End Role="Sys_User" Type="Self.Sys_User" Multiplicity="1" />
+    <End Role="Sys_User_Permission" Type="Self.Sys_User_Permission" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sys_User">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="Sys_User_Permission">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Sys_User_Role_Sys_Role">
+    <End Role="Sys_Role" Type="Self.Sys_Role" Multiplicity="1" />
+    <End Role="Sys_User_Role" Type="Self.Sys_User_Role" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sys_Role">
+        <PropertyRef Name="RoleID" />
+      </Principal>
+      <Dependent Role="Sys_User_Role">
+        <PropertyRef Name="RoleID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Sys_User_Role_Sys_User">
+    <End Role="Sys_User" Type="Self.Sys_User" Multiplicity="1" />
+    <End Role="Sys_User_Role" Type="Self.Sys_User_Role" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sys_User">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="Sys_User_Role">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="kongheydbModelStoreContainer">
+    <EntitySet Name="Sys_ErrorLog" EntityType="Self.Sys_ErrorLog" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Sys_Log" EntityType="Self.Sys_Log" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Sys_Permission" EntityType="Self.Sys_Permission" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Sys_Role" EntityType="Self.Sys_Role" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Sys_Role_Permission" EntityType="Self.Sys_Role_Permission" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Sys_User" EntityType="Self.Sys_User" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Sys_User_Permission" EntityType="Self.Sys_User_Permission" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Sys_User_Role" EntityType="Self.Sys_User_Role" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Sys_WebMenu" EntityType="Self.Sys_WebMenu" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Sys_Role_Permission_Sys_Permission" Association="Self.FK_Sys_Role_Permission_Sys_Permission">
+      <End Role="Sys_Permission" EntitySet="Sys_Permission" />
+      <End Role="Sys_Role_Permission" EntitySet="Sys_Role_Permission" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Sys_Role_Permission_Sys_Role" Association="Self.FK_Sys_Role_Permission_Sys_Role">
+      <End Role="Sys_Role" EntitySet="Sys_Role" />
+      <End Role="Sys_Role_Permission" EntitySet="Sys_Role_Permission" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Sys_User_Permission_Sys_Permission" Association="Self.FK_Sys_User_Permission_Sys_Permission">
+      <End Role="Sys_Permission" EntitySet="Sys_Permission" />
+      <End Role="Sys_User_Permission" EntitySet="Sys_User_Permission" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Sys_User_Permission_Sys_User" Association="Self.FK_Sys_User_Permission_Sys_User">
+      <End Role="Sys_User" EntitySet="Sys_User" />
+      <End Role="Sys_User_Permission" EntitySet="Sys_User_Permission" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Sys_User_Role_Sys_Role" Association="Self.FK_Sys_User_Role_Sys_Role">
+      <End Role="Sys_Role" EntitySet="Sys_Role" />
+      <End Role="Sys_User_Role" EntitySet="Sys_User_Role" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Sys_User_Role_Sys_User" Association="Self.FK_Sys_User_Role_Sys_User">
+      <End Role="Sys_User" EntitySet="Sys_User" />
+      <End Role="Sys_User_Role" EntitySet="Sys_User_Role" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

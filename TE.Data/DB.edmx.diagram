@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="08bc552e7e034473918b3a2969db1b7b" Name="Diagram1">
+        <EntityTypeShape EntityType="kongheydbModel.Sys_ErrorLog" Width="1.5" PointX="5.75" PointY="2" IsExpanded="true" />
+        <EntityTypeShape EntityType="kongheydbModel.Sys_Log" Width="1.5" PointX="2.75" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="kongheydbModel.Sys_Permission" Width="1.5" PointX="0.75" PointY="13.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="kongheydbModel.Sys_Role" Width="1.5" PointX="0.75" PointY="3.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="kongheydbModel.Sys_Role_Permission" Width="1.5" PointX="3" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="kongheydbModel.Sys_User" Width="1.5" PointX="0.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="kongheydbModel.Sys_User_Permission" Width="1.5" PointX="3" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="kongheydbModel.Sys_User_Role" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="kongheydbModel.Sys_WebMenu" Width="1.5" PointX="5.75" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="kongheydbModel.sysdiagrams" Width="1.5" PointX="4.75" PointY="8" IsExpanded="true" />
+        <AssociationConnector Association="kongheydbModel.FK_Sys_Role_Permission_Sys_Permission" ManuallyRouted="false" />
+        <AssociationConnector Association="kongheydbModel.FK_Sys_User_Permission_Sys_Permission" ManuallyRouted="false" />
+        <AssociationConnector Association="kongheydbModel.FK_Sys_Role_Permission_Sys_Role" ManuallyRouted="false" />
+        <AssociationConnector Association="kongheydbModel.FK_Sys_User_Role_Sys_Role" ManuallyRouted="false" />
+        <AssociationConnector Association="kongheydbModel.FK_Sys_User_Permission_Sys_User" ManuallyRouted="false" />
+        <AssociationConnector Association="kongheydbModel.FK_Sys_User_Role_Sys_User" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

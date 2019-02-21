@@ -17,7 +17,7 @@
     <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
     <link href="~/Content/css/framework-login.css" rel="stylesheet" />
     <script src="~/Scripts/jquery-3.3.1.min.js"></script>
-
+    <script src="~/Scripts/ace.js"></script>
 </head>
 <body>
     <div class="wrapper">
@@ -29,11 +29,11 @@
             <form class="form-horizontal" role="form">
                 <div class="form-group">
                     <label>用户名/手机号/邮箱地址</label>
-                    <input id="txt_account" class="form-control input-block" type="text"  autocomplete="off" placeholder="用户名/手机号/邮箱地址" />
+                    <input id="txt_account" class="form-control input-block" type="text" autocomplete="off" placeholder="用户名/手机号/邮箱地址" />
                 </div>
                 <div class="form-group">
                     <label>登录密码</label>
-                    <input id="txt_password" class="form-control input-block"  autocomplete="off" type="password" placeholder="登录密码" />
+                    <input id="txt_password" class="form-control input-block" autocomplete="off" type="password" placeholder="登录密码" />
                 </div>
                 <div class="form-group">
                     <div class="col-sm-8">
@@ -47,11 +47,14 @@
                 </div>
                 <div class="form-group">
                     <div class="col-sm-6">
-                        <button id="login_button" class="btn btn-default btn-primary" role="button" type="submit">登录</button>
+                        <button id="login_button" class="btn btn-default btn-primary" role="button" type="submit"><span>登录</span></button>
                     </div>
                 </div>
+                <div class="row">
+                </div>
             </form>
-            <div class="login_tips"></div>
+            <div class="login_tips">@ViewBag.info</div>
+            <p>@ViewBag.info</p>
         </div>
         <ul class="bg-bubbles">
             <li></li>
@@ -86,9 +89,10 @@
                         $.login.formMessage('请输入密码');
                         return false;
                     } else {
+                        
                         $('#login_button').attr('disabled', 'disabled').find('span').html('loading...');
-                        var params = { loginName: $.trim($userName.val()), password: $.md5($.trim($password.val())) }
-                        alert(params);
+                        var params = { loginName: $.trim($userName), password: $.trim($password) }
+                        alert("1");
                         $.ajax({
                             url: "@this.Href("~/Account/Login")",
                             data: params,
@@ -96,7 +100,7 @@
                             dataType: "json",
                             success: function (data) {
                                 if (data.Status == ResultStatus.OK) {
-
+                                    alert(@ViewBag.info);
                                 }
                             }
                         });
@@ -109,7 +113,18 @@
                         $('.wrapper').height($(window).height());
                         $('.container').css('margin-top', ($(window).height() - $('.container').height()) / 2 - 80);
                     });
-                    document.body.contentEditable = 'true';
+                    $("#txt_account").focus();
+
+                    $("#login_button").click(function () {
+                        $.login.loginClick();
+                    });
+                    document.onkeydown = function (e) {
+                        if (!e) e = window.event;
+                        if ((e.keyCode || e.which) == 13) {
+                            document.getElementById("login_button").focus();
+                            document.getElementById("login_button").click();
+                        }
+                    }
                 }
             };
             $(function () {
