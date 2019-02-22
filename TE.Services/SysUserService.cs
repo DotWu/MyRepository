@@ -13,7 +13,7 @@ namespace TE.Services
     {
 
          
-        public Sys_User CheckUserLogin(Sys_User sysUser)
+        public TE.Models.Sys_User CheckUserLogin(TE.Models.Sys_User sysUser)
         {
             string sql = $"select * from Sys_User Where UserID='{sysUser.UserID}' and PassWord='{sysUser.PassWord}' ";
             SqlDataReader objReader = SQLHelper.GetReader(sql);

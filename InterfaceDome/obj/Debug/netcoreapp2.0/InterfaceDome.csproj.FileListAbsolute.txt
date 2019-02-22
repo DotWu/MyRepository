@@ -1,0 +1,11 @@
+C:\CaoHuikonghey2018\SVN.TE.NetCore\MyRepository\InterfaceDome\bin\Debug\netcoreapp2.0\InterfaceDome.deps.json
+C:\CaoHuikonghey2018\SVN.TE.NetCore\MyRepository\InterfaceDome\bin\Debug\netcoreapp2.0\InterfaceDome.runtimeconfig.json
+C:\CaoHuikonghey2018\SVN.TE.NetCore\MyRepository\InterfaceDome\bin\Debug\netcoreapp2.0\InterfaceDome.runtimeconfig.dev.json
+C:\CaoHuikonghey2018\SVN.TE.NetCore\MyRepository\InterfaceDome\bin\Debug\netcoreapp2.0\InterfaceDome.dll
+C:\CaoHuikonghey2018\SVN.TE.NetCore\MyRepository\InterfaceDome\bin\Debug\netcoreapp2.0\InterfaceDome.pdb
+C:\CaoHuikonghey2018\SVN.TE.NetCore\MyRepository\InterfaceDome\obj\Debug\netcoreapp2.0\InterfaceDome.csprojAssemblyReference.cache
+C:\CaoHuikonghey2018\SVN.TE.NetCore\MyRepository\InterfaceDome\obj\Debug\netcoreapp2.0\InterfaceDome.csproj.CoreCompileInputs.cache
+C:\CaoHuikonghey2018\SVN.TE.NetCore\MyRepository\InterfaceDome\obj\Debug\netcoreapp2.0\InterfaceDome.AssemblyInfoInputs.cache
+C:\CaoHuikonghey2018\SVN.TE.NetCore\MyRepository\InterfaceDome\obj\Debug\netcoreapp2.0\InterfaceDome.AssemblyInfo.cs
+C:\CaoHuikonghey2018\SVN.TE.NetCore\MyRepository\InterfaceDome\obj\Debug\netcoreapp2.0\InterfaceDome.dll
+C:\CaoHuikonghey2018\SVN.TE.NetCore\MyRepository\InterfaceDome\obj\Debug\netcoreapp2.0\InterfaceDome.pdb

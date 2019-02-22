@@ -9,3 +9,8 @@ C:\CaoHuikonghey2018\SVN.TE.NetCore\MyRepository\TE.Services\bin\Debug\TE.Models
 C:\CaoHuikonghey2018\SVN.TE.NetCore\MyRepository\TE.Services\obj\Debug\TE.Services.csproj.CopyComplete
 C:\CaoHuikonghey2018\SVN.TE.NetCore\MyRepository\TE.Services\obj\Debug\TE.Services.dll
 C:\CaoHuikonghey2018\SVN.TE.NetCore\MyRepository\TE.Services\obj\Debug\TE.Services.pdb
+C:\CaoHuikonghey2018\SVN.TE.NetCore\MyRepository\TE.Services\bin\Debug\EntityFramework.dll
+C:\CaoHuikonghey2018\SVN.TE.NetCore\MyRepository\TE.Services\bin\Debug\TE.Data.dll.config
+C:\CaoHuikonghey2018\SVN.TE.NetCore\MyRepository\TE.Services\bin\Debug\TE.Models.dll.config
+C:\CaoHuikonghey2018\SVN.TE.NetCore\MyRepository\TE.Services\bin\Debug\EntityFramework.xml
+C:\CaoHuikonghey2018\SVN.TE.NetCore\MyRepository\TE.Services\bin\Debug\zh-Hans\EntityFramework.resources.dll

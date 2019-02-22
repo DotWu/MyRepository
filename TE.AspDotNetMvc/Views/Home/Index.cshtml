@@ -9,23 +9,71 @@
 </div>
 
 <div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+    @*<div class="col-md-4">
+            <h2>Getting started</h2>
+            <p>
+                ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
+                enables a clean separation of concerns and gives you full control over markup
+                for enjoyable, agile development.
+            </p>
+            <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+            <h2>Get more libraries</h2>
+            <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
+            <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+            <h2>Web Hosting</h2>
+            <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
+            <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+        </div>*@
+    <div class="col-md-6">
+        <h2>测试多个路由匹配的优先顺序</h2>
+        <p><a class="btn btn-default" href="/Home/Index/2015">Learn more &raquo;</a></p>
     </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+    <div class="col-md-6">
+        <h2>测试字面量和常量必须严格匹配1</h2>
+        <p><a class="btn btn-default" href="/blogs/tom/news/2015">Learn more &raquo;</a></p>
     </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+    <div class="col-md-6">
+        <h2>测试字面量和常量必须严格匹配2</h2>
+        <p><a class="btn btn-default" href="/blogs/jack/article/2016">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-6">
+        <h2>测试字面量和常量必须严格匹配3</h2>
+        <p><a class="btn btn-default" href="/sqlserver/2015/8/09/to-2016">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-6">
+        <h2>测试字面量和常量必须严格匹配4(这个会出错)</h2>
+        <p><a class="btn btn-default" href="/blogs/lili/math/09">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-6">
+        <h2>测试{name}-{age}（这个可能会出错）</h2>
+        <p><a class="btn btn-default" href="/bto-09">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-6">
+        <h2>测试/{aa}{year}/{month}/{day}/index.aspx</h2>
+        <p><a class="btn btn-default" href="/{11}/2019/02/22/index.aspx">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-6">
+        <h2>测试{year}/{month}/{day}/index.aspx(这个会出错：因为约束不符合)</h2>
+        <p><a class="btn btn-default" href="/2019/02/22/index.aspx">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-6">
+        <h2>测试{year}/{month}/{day}/Details.php(这个会出错：因为约束不符合)</h2>
+        <p><a class="btn btn-default" href="/2019/02/22/Details">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-6">
+        <h2>测试包含一个action的url</h2>
+        <p><a class="btn btn-default" href="/About/li/2019/02/22">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-6">
+        <h2>测试包含一个controller的url</h2>
+        <p><a class="btn btn-default" href="/li/2019/02/Home">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-6">
+        <h2>测试{table}/Deails.apsx  (会出错更前面路由冲突，或者放到前面)</h2>
+        <p><a class="btn btn-default" href="/object/Deails.aspx">Learn more &raquo;</a></p>
     </div>
 </div>

@@ -11,9 +11,9 @@ namespace TE.AspDotNetMvc.Controllers
         // GET: Users
         public ActionResult Index()
         {
-            return View();
+            return View("UserList");
         }
-
+       
         // GET: Users/Details/5
         public ActionResult Details(int id)
         {

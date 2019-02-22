@@ -104,3 +104,8 @@ C:\CaoHuikonghey2018\SVN.TE.NetCore\MyRepository\TE.AspDotNetMvc\bin\TE.Services
 C:\CaoHuikonghey2018\SVN.TE.NetCore\MyRepository\TE.AspDotNetMvc\bin\TE.Data.dll
 C:\CaoHuikonghey2018\SVN.TE.NetCore\MyRepository\TE.AspDotNetMvc\bin\TE.Services.pdb
 C:\CaoHuikonghey2018\SVN.TE.NetCore\MyRepository\TE.AspDotNetMvc\bin\TE.Data.pdb
+C:\CaoHuikonghey2018\SVN.TE.NetCore\MyRepository\TE.AspDotNetMvc\bin\EntityFramework.dll
+C:\CaoHuikonghey2018\SVN.TE.NetCore\MyRepository\TE.AspDotNetMvc\bin\TE.Models.dll.config
+C:\CaoHuikonghey2018\SVN.TE.NetCore\MyRepository\TE.AspDotNetMvc\bin\TE.Data.dll.config
+C:\CaoHuikonghey2018\SVN.TE.NetCore\MyRepository\TE.AspDotNetMvc\bin\EntityFramework.xml
+C:\CaoHuikonghey2018\SVN.TE.NetCore\MyRepository\TE.AspDotNetMvc\bin\zh-Hans\EntityFramework.resources.dll
