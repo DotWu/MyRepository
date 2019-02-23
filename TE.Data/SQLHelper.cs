@@ -11,8 +11,8 @@ namespace TE.Data
 {
     public class SQLHelper
     {
-        //Data Source = 123.207.1.223,55972; Initial Catalog = kongheydb; User ID = konghey; Password=konghey518
-        private static string connString = $"Data Source = 123.207.1.223,55972; Initial Catalog = kongheydb; User ID = konghey; Password=konghey518"; //ConfigurationManager.ConnectionStrings["connString"].ToString();
+     
+        private static string connString = $"..."; //ConfigurationManager.ConnectionStrings["connString"].ToString();
 
 
         public static SqlDataReader GetReader(string sql)
