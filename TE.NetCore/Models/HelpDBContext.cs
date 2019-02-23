@@ -27,7 +27,7 @@ namespace TE.NetCore.Models
 
         //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         //{
-        //    optionsBuilder.UseSqlite("Data Source=123.207.1.223,55972;Initial Catalog=kongheydb;User ID=konghey;Password=konghey518");
+        //    optionsBuilder.UseSqlite("");
         //}
     }
 }
